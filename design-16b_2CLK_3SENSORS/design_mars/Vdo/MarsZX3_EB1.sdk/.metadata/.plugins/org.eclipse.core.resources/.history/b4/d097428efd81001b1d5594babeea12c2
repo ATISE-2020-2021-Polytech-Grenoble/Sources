@@ -423,7 +423,6 @@ int main()
 			xil_printf("Uartps hello world Example Failed\r\n");
 			return XST_FAILURE;
 		}
-		return 1;
 		//xil_printf("Successfully ran Uartps hello world Example\r\n");
 
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////

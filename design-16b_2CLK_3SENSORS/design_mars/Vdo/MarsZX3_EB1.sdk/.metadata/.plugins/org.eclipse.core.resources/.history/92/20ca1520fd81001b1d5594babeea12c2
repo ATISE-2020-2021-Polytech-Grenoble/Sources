@@ -423,7 +423,6 @@ int main()
 			xil_printf("Uartps hello world Example Failed\r\n");
 			return XST_FAILURE;
 		}
-		return 1;
 		//xil_printf("Successfully ran Uartps hello world Example\r\n");
 
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -632,7 +631,7 @@ int UartSend(u16 DeviceId, uint8_t* img, uint32_t width, uint32_t height)
 	XUartPs_SetBaudRate(&Uart_Ps, 115200);
 
 	uint32_t img_size = width * height * 2;
-	XUartPs_Send(&Uart_Ps,&img, img_size);
+	XUartPs_Send(&Uart_Ps,&img_size, 4);
 	/*while (SentCount < (sizeof(HelloWorld))) {
 		SentCount += XUartPs_Send(&Uart_Ps,
 					   &HelloWorld[SentCount], 1);

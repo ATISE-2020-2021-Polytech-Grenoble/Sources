@@ -206,7 +206,7 @@ static void vdma_done1(void *CallbackRef, u32 Mask);
 static void vdma_err1(void *CallbackRef, u32 Mask);
 static void vdma_done2(void *CallbackRef, u32 Mask);
 static void vdma_err2(void *CallbackRef, u32 Mask);
-int UartSend(u16 DeviceId, uint8_t* img, uint32_t width, uint32_t height);
+int UartSend(u16 DeviceId, uint8_t* img);
 
 static int HDPYX_SETUP_TPG(void);
 
@@ -417,13 +417,12 @@ int main()
 		}
 
 		int Status;
-		Status = UartSend(UART_DEVICE_ID, (uint8_t*)(&img_buffer0[buffer_offset]), IMG_WIDTH, IMG_HEIGHT);
+		Status = UartSend(UART_DEVICE_ID, (uint8_t*)(&img_buffer0[buffer_offset]));
 
 		if (Status == XST_FAILURE) {
 			xil_printf("Uartps hello world Example Failed\r\n");
 			return XST_FAILURE;
 		}
-		return 1;
 		//xil_printf("Successfully ran Uartps hello world Example\r\n");
 
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -615,6 +614,7 @@ static int HDPYX_SETUP_TPG(void)
 
 int UartSend(u16 DeviceId, uint8_t* img, uint32_t width, uint32_t height)
 {
+	u8 HelloWorld[] = "Hello World";
 	int SentCount = 0;
 	int Status;
 	XUartPs_Config *Config;
@@ -632,7 +632,7 @@ int UartSend(u16 DeviceId, uint8_t* img, uint32_t width, uint32_t height)
 	XUartPs_SetBaudRate(&Uart_Ps, 115200);
 
 	uint32_t img_size = width * height * 2;
-	XUartPs_Send(&Uart_Ps,&img, img_size);
+	XUartPs_Send(&Uart_Ps,&img_size, 1);
 	/*while (SentCount < (sizeof(HelloWorld))) {
 		SentCount += XUartPs_Send(&Uart_Ps,
 					   &HelloWorld[SentCount], 1);

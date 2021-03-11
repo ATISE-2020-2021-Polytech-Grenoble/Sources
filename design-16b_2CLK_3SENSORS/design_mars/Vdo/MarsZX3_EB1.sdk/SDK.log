@@ -52,3 +52,243 @@ con
 ----------------End of Script----------------
 
 00:38:55 INFO  : Launch script is exported to file '/home/killian/Bureau/Atise/Sources/design-16b_2CLK_3SENSORS/design_mars/Vdo/MarsZX3_EB1.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_uartimage.elf_on_local.tcl'
+00:47:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:47:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203862029A" && level==0} -index 1' command is executed.
+00:47:55 INFO  : FPGA configured successfully with bitstream "/home/killian/Bureau/Atise/Sources/design-16b_2CLK_3SENSORS/design_mars/Vdo/MarsZX3_EB1.sdk/system_top_hw_platform_0/system_top.bit"
+00:48:05 INFO  : Disconnected from the channel tcfchan#1.
+00:48:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203862029A" && level==0} -index 1' command is executed.
+00:48:07 INFO  : 'fpga -state' command is executed.
+00:48:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:48:07 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203862029A' is selected.
+00:48:07 INFO  : 'jtag frequency' command is executed.
+00:48:07 INFO  : Sourcing of '/home/killian/Bureau/Atise/Sources/design-16b_2CLK_3SENSORS/design_mars/Vdo/MarsZX3_EB1.sdk/system_top_hw_platform_0/ps7_init.tcl' is done.
+00:48:07 INFO  : Context for 'APU' is selected.
+00:48:09 INFO  : Hardware design information is loaded from '/home/killian/Bureau/Atise/Sources/design-16b_2CLK_3SENSORS/design_mars/Vdo/MarsZX3_EB1.sdk/system_top_hw_platform_0/system.hdf'.
+00:48:09 INFO  : 'configparams force-mem-access 1' command is executed.
+00:48:09 INFO  : Context for 'APU' is selected.
+00:48:09 INFO  : 'stop' command is executed.
+00:48:10 INFO  : 'ps7_init' command is executed.
+00:48:10 INFO  : 'ps7_post_config' command is executed.
+00:48:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:48:10 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+00:48:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:48:10 INFO  : The application '/home/killian/Bureau/Atise/Sources/design-16b_2CLK_3SENSORS/design_mars/Vdo/MarsZX3_EB1.sdk/UARTImage/Debug/UARTImage.elf' is downloaded to processor 'ps7_cortexa9_0'.
+00:48:10 INFO  : 'configparams force-mem-access 0' command is executed.
+00:48:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/killian/Bureau/Atise/Sources/design-16b_2CLK_3SENSORS/design_mars/Vdo/MarsZX3_EB1.sdk/system_top_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203862029A"} -index 0
+loadhw -hw /home/killian/Bureau/Atise/Sources/design-16b_2CLK_3SENSORS/design_mars/Vdo/MarsZX3_EB1.sdk/system_top_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203862029A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203862029A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203862029A"} -index 0
+dow /home/killian/Bureau/Atise/Sources/design-16b_2CLK_3SENSORS/design_mars/Vdo/MarsZX3_EB1.sdk/UARTImage/Debug/UARTImage.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+00:48:10 INFO  : Memory regions updated for context APU
+00:48:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:48:10 INFO  : 'con' command is executed.
+00:48:10 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203862029A"} -index 0
+con
+----------------End of Script----------------
+
+00:48:10 INFO  : Launch script is exported to file '/home/killian/Bureau/Atise/Sources/design-16b_2CLK_3SENSORS/design_mars/Vdo/MarsZX3_EB1.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_uartimage.elf_on_local.tcl'
+00:53:24 INFO  : Disconnected from the channel tcfchan#2.
+00:54:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:54:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203862029A" && level==0} -index 1' command is executed.
+00:54:14 INFO  : FPGA configured successfully with bitstream "/home/killian/Bureau/Atise/Sources/design-16b_2CLK_3SENSORS/design_mars/Vdo/MarsZX3_EB1.sdk/system_top_hw_platform_0/system_top.bit"
+00:54:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203862029A" && level==0} -index 1' command is executed.
+00:54:26 INFO  : 'fpga -state' command is executed.
+00:54:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:54:26 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203862029A' is selected.
+00:54:26 INFO  : 'jtag frequency' command is executed.
+00:54:26 INFO  : Sourcing of '/home/killian/Bureau/Atise/Sources/design-16b_2CLK_3SENSORS/design_mars/Vdo/MarsZX3_EB1.sdk/system_top_hw_platform_0/ps7_init.tcl' is done.
+00:54:26 INFO  : Context for 'APU' is selected.
+00:54:26 INFO  : Hardware design information is loaded from '/home/killian/Bureau/Atise/Sources/design-16b_2CLK_3SENSORS/design_mars/Vdo/MarsZX3_EB1.sdk/system_top_hw_platform_0/system.hdf'.
+00:54:26 INFO  : 'configparams force-mem-access 1' command is executed.
+00:54:27 INFO  : Context for 'APU' is selected.
+00:54:27 INFO  : 'stop' command is executed.
+00:54:27 INFO  : 'ps7_init' command is executed.
+00:54:27 INFO  : 'ps7_post_config' command is executed.
+00:54:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:54:27 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+00:54:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:54:27 INFO  : The application '/home/killian/Bureau/Atise/Sources/design-16b_2CLK_3SENSORS/design_mars/Vdo/MarsZX3_EB1.sdk/UARTImage/Debug/UARTImage.elf' is downloaded to processor 'ps7_cortexa9_0'.
+00:54:27 INFO  : 'configparams force-mem-access 0' command is executed.
+00:54:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/killian/Bureau/Atise/Sources/design-16b_2CLK_3SENSORS/design_mars/Vdo/MarsZX3_EB1.sdk/system_top_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203862029A"} -index 0
+loadhw -hw /home/killian/Bureau/Atise/Sources/design-16b_2CLK_3SENSORS/design_mars/Vdo/MarsZX3_EB1.sdk/system_top_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203862029A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203862029A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203862029A"} -index 0
+dow /home/killian/Bureau/Atise/Sources/design-16b_2CLK_3SENSORS/design_mars/Vdo/MarsZX3_EB1.sdk/UARTImage/Debug/UARTImage.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+00:54:27 INFO  : Memory regions updated for context APU
+00:54:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:54:27 INFO  : 'con' command is executed.
+00:54:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203862029A"} -index 0
+con
+----------------End of Script----------------
+
+00:54:27 INFO  : Launch script is exported to file '/home/killian/Bureau/Atise/Sources/design-16b_2CLK_3SENSORS/design_mars/Vdo/MarsZX3_EB1.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_uartimage.elf_on_local.tcl'
+01:00:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:00:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203862029A" && level==0} -index 1' command is executed.
+01:00:44 INFO  : FPGA configured successfully with bitstream "/home/killian/Bureau/Atise/Sources/design-16b_2CLK_3SENSORS/design_mars/Vdo/MarsZX3_EB1.sdk/system_top_hw_platform_0/system_top.bit"
+01:01:03 INFO  : Disconnected from the channel tcfchan#3.
+01:01:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203862029A" && level==0} -index 1' command is executed.
+01:01:04 INFO  : 'fpga -state' command is executed.
+01:01:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:01:04 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203862029A' is selected.
+01:01:04 INFO  : 'jtag frequency' command is executed.
+01:01:04 INFO  : Sourcing of '/home/killian/Bureau/Atise/Sources/design-16b_2CLK_3SENSORS/design_mars/Vdo/MarsZX3_EB1.sdk/system_top_hw_platform_0/ps7_init.tcl' is done.
+01:01:04 INFO  : Context for 'APU' is selected.
+01:01:06 INFO  : Hardware design information is loaded from '/home/killian/Bureau/Atise/Sources/design-16b_2CLK_3SENSORS/design_mars/Vdo/MarsZX3_EB1.sdk/system_top_hw_platform_0/system.hdf'.
+01:01:06 INFO  : 'configparams force-mem-access 1' command is executed.
+01:01:06 INFO  : Context for 'APU' is selected.
+01:01:06 INFO  : 'stop' command is executed.
+01:01:07 INFO  : 'ps7_init' command is executed.
+01:01:07 INFO  : 'ps7_post_config' command is executed.
+01:01:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:01:07 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+01:01:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:01:07 INFO  : The application '/home/killian/Bureau/Atise/Sources/design-16b_2CLK_3SENSORS/design_mars/Vdo/MarsZX3_EB1.sdk/UARTImage/Debug/UARTImage.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:01:07 INFO  : 'configparams force-mem-access 0' command is executed.
+01:01:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/killian/Bureau/Atise/Sources/design-16b_2CLK_3SENSORS/design_mars/Vdo/MarsZX3_EB1.sdk/system_top_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203862029A"} -index 0
+loadhw -hw /home/killian/Bureau/Atise/Sources/design-16b_2CLK_3SENSORS/design_mars/Vdo/MarsZX3_EB1.sdk/system_top_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203862029A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203862029A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203862029A"} -index 0
+dow /home/killian/Bureau/Atise/Sources/design-16b_2CLK_3SENSORS/design_mars/Vdo/MarsZX3_EB1.sdk/UARTImage/Debug/UARTImage.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:01:07 INFO  : Memory regions updated for context APU
+01:01:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:01:07 INFO  : 'con' command is executed.
+01:01:07 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203862029A"} -index 0
+con
+----------------End of Script----------------
+
+01:01:07 INFO  : Launch script is exported to file '/home/killian/Bureau/Atise/Sources/design-16b_2CLK_3SENSORS/design_mars/Vdo/MarsZX3_EB1.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_uartimage.elf_on_local.tcl'
+01:04:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:04:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203862029A" && level==0} -index 1' command is executed.
+01:04:02 INFO  : FPGA configured successfully with bitstream "/home/killian/Bureau/Atise/Sources/design-16b_2CLK_3SENSORS/design_mars/Vdo/MarsZX3_EB1.sdk/system_top_hw_platform_0/system_top.bit"
+01:04:19 INFO  : Disconnected from the channel tcfchan#4.
+01:04:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203862029A" && level==0} -index 1' command is executed.
+01:04:21 INFO  : 'fpga -state' command is executed.
+01:04:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:04:21 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203862029A' is selected.
+01:04:21 INFO  : 'jtag frequency' command is executed.
+01:04:21 INFO  : Sourcing of '/home/killian/Bureau/Atise/Sources/design-16b_2CLK_3SENSORS/design_mars/Vdo/MarsZX3_EB1.sdk/system_top_hw_platform_0/ps7_init.tcl' is done.
+01:04:21 INFO  : Context for 'APU' is selected.
+01:04:23 INFO  : Hardware design information is loaded from '/home/killian/Bureau/Atise/Sources/design-16b_2CLK_3SENSORS/design_mars/Vdo/MarsZX3_EB1.sdk/system_top_hw_platform_0/system.hdf'.
+01:04:23 INFO  : 'configparams force-mem-access 1' command is executed.
+01:04:23 INFO  : Context for 'APU' is selected.
+01:04:23 INFO  : 'stop' command is executed.
+01:04:23 INFO  : 'ps7_init' command is executed.
+01:04:23 INFO  : 'ps7_post_config' command is executed.
+01:04:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:04:23 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+01:04:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:04:24 INFO  : The application '/home/killian/Bureau/Atise/Sources/design-16b_2CLK_3SENSORS/design_mars/Vdo/MarsZX3_EB1.sdk/UARTImage/Debug/UARTImage.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:04:24 INFO  : 'configparams force-mem-access 0' command is executed.
+01:04:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/killian/Bureau/Atise/Sources/design-16b_2CLK_3SENSORS/design_mars/Vdo/MarsZX3_EB1.sdk/system_top_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203862029A"} -index 0
+loadhw -hw /home/killian/Bureau/Atise/Sources/design-16b_2CLK_3SENSORS/design_mars/Vdo/MarsZX3_EB1.sdk/system_top_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203862029A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203862029A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203862029A"} -index 0
+dow /home/killian/Bureau/Atise/Sources/design-16b_2CLK_3SENSORS/design_mars/Vdo/MarsZX3_EB1.sdk/UARTImage/Debug/UARTImage.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:04:24 INFO  : Memory regions updated for context APU
+01:04:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:04:24 INFO  : 'con' command is executed.
+01:04:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203862029A"} -index 0
+con
+----------------End of Script----------------
+
+01:04:24 INFO  : Launch script is exported to file '/home/killian/Bureau/Atise/Sources/design-16b_2CLK_3SENSORS/design_mars/Vdo/MarsZX3_EB1.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_uartimage.elf_on_local.tcl'
+01:06:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:06:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203862029A" && level==0} -index 1' command is executed.
+01:06:26 INFO  : FPGA configured successfully with bitstream "/home/killian/Bureau/Atise/Sources/design-16b_2CLK_3SENSORS/design_mars/Vdo/MarsZX3_EB1.sdk/system_top_hw_platform_0/system_top.bit"
+01:06:34 INFO  : Disconnected from the channel tcfchan#5.
+01:06:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203862029A" && level==0} -index 1' command is executed.
+01:06:35 INFO  : 'fpga -state' command is executed.
+01:06:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:06:35 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203862029A' is selected.
+01:06:35 INFO  : 'jtag frequency' command is executed.
+01:06:35 INFO  : Sourcing of '/home/killian/Bureau/Atise/Sources/design-16b_2CLK_3SENSORS/design_mars/Vdo/MarsZX3_EB1.sdk/system_top_hw_platform_0/ps7_init.tcl' is done.
+01:06:35 INFO  : Context for 'APU' is selected.
+01:06:38 INFO  : Hardware design information is loaded from '/home/killian/Bureau/Atise/Sources/design-16b_2CLK_3SENSORS/design_mars/Vdo/MarsZX3_EB1.sdk/system_top_hw_platform_0/system.hdf'.
+01:06:38 INFO  : 'configparams force-mem-access 1' command is executed.
+01:06:38 INFO  : Context for 'APU' is selected.
+01:06:38 INFO  : 'stop' command is executed.
+01:06:38 INFO  : 'ps7_init' command is executed.
+01:06:38 INFO  : 'ps7_post_config' command is executed.
+01:06:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:06:38 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+01:06:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:06:39 INFO  : The application '/home/killian/Bureau/Atise/Sources/design-16b_2CLK_3SENSORS/design_mars/Vdo/MarsZX3_EB1.sdk/UARTImage/Debug/UARTImage.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:06:39 INFO  : 'configparams force-mem-access 0' command is executed.
+01:06:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/killian/Bureau/Atise/Sources/design-16b_2CLK_3SENSORS/design_mars/Vdo/MarsZX3_EB1.sdk/system_top_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203862029A"} -index 0
+loadhw -hw /home/killian/Bureau/Atise/Sources/design-16b_2CLK_3SENSORS/design_mars/Vdo/MarsZX3_EB1.sdk/system_top_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203862029A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203862029A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203862029A"} -index 0
+dow /home/killian/Bureau/Atise/Sources/design-16b_2CLK_3SENSORS/design_mars/Vdo/MarsZX3_EB1.sdk/UARTImage/Debug/UARTImage.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:06:39 INFO  : Memory regions updated for context APU
+01:06:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:06:39 INFO  : 'con' command is executed.
+01:06:39 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203862029A"} -index 0
+con
+----------------End of Script----------------
+
+01:06:39 INFO  : Launch script is exported to file '/home/killian/Bureau/Atise/Sources/design-16b_2CLK_3SENSORS/design_mars/Vdo/MarsZX3_EB1.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_uartimage.elf_on_local.tcl'

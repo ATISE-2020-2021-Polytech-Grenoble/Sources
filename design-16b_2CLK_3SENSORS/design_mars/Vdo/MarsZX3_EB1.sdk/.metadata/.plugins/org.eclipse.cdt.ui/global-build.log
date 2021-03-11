@@ -748,3 +748,803 @@ make pre-build main-build
 a9-linaro-pre-build-step
  
 make: rien à faire pour « main-build ».
+00:46:00 **** Auto Build of configuration Debug for project UARTImage ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:231:16: warning: 'spi_buffer' defined but not used [-Wunused-variable]
+ static uint8_t spi_buffer[SPI_BUFFER_SIZE];
+                ^~~~~~~~~~
+../main.c:219:35: warning: 'gpio4' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                                   ^~~~~
+../main.c:219:28: warning: 'gpio3' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                            ^~~~~
+../main.c:219:21: warning: 'gpio1' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                     ^~~~~
+../main.c: In function 'HDPYX_SETUP_TPG':
+../main.c:607:8: warning: 'status' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     if (status != XST_SUCCESS) {
+        ^
+Finished building: ../main.c
+ 
+Building target: UARTImage.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/lib -o "UARTImage.elf"  ./atise_img.o ./atise_vdma.o ./hdpyx_spi.o ./main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: UARTImage.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size UARTImage.elf  |tee "UARTImage.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 127140	   4100	92425664	92556904	5844e68	UARTImage.elf
+Finished building: UARTImage.elf.size
+ 
+00:46:19 **** Auto Build of configuration Debug for project UARTImage ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:231:16: warning: 'spi_buffer' defined but not used [-Wunused-variable]
+ static uint8_t spi_buffer[SPI_BUFFER_SIZE];
+                ^~~~~~~~~~
+../main.c:219:35: warning: 'gpio4' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                                   ^~~~~
+../main.c:219:28: warning: 'gpio3' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                            ^~~~~
+../main.c:219:21: warning: 'gpio1' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                     ^~~~~
+../main.c: In function 'HDPYX_SETUP_TPG':
+../main.c:607:8: warning: 'status' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     if (status != XST_SUCCESS) {
+        ^
+Finished building: ../main.c
+ 
+Building target: UARTImage.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/lib -o "UARTImage.elf"  ./atise_img.o ./atise_vdma.o ./hdpyx_spi.o ./main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: UARTImage.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size UARTImage.elf  |tee "UARTImage.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 126980	   4100	92425664	92556744	5844dc8	UARTImage.elf
+Finished building: UARTImage.elf.size
+ 
+00:46:32 **** Auto Build of configuration Debug for project UARTImage ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:231:16: warning: 'spi_buffer' defined but not used [-Wunused-variable]
+ static uint8_t spi_buffer[SPI_BUFFER_SIZE];
+                ^~~~~~~~~~
+../main.c:219:35: warning: 'gpio4' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                                   ^~~~~
+../main.c:219:28: warning: 'gpio3' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                            ^~~~~
+../main.c:219:21: warning: 'gpio1' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                     ^~~~~
+../main.c: In function 'HDPYX_SETUP_TPG':
+../main.c:607:8: warning: 'status' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     if (status != XST_SUCCESS) {
+        ^
+Finished building: ../main.c
+ 
+Building target: UARTImage.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/lib -o "UARTImage.elf"  ./atise_img.o ./atise_vdma.o ./hdpyx_spi.o ./main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: UARTImage.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size UARTImage.elf  |tee "UARTImage.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 126948	   4100	92425664	92556712	5844da8	UARTImage.elf
+Finished building: UARTImage.elf.size
+ 
+00:47:59 **** Incremental Build of configuration Debug for project UARTImage ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: rien à faire pour « main-build ».
+00:51:45 **** Auto Build of configuration Debug for project UARTImage ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:420:37: error: expected expression before ',' token
+   Status = UartSend(UART_DEVICE_ID, , uint8_t* img);
+                                     ^
+../main.c:420:12: error: too many arguments to function 'UartSend'
+   Status = UartSend(UART_DEVICE_ID, , uint8_t* img);
+            ^~~~~~~~
+../main.c:209:5: note: declared here
+ int UartSend(u16 DeviceId);
+     ^~~~~~~~
+At top level:
+../main.c:231:16: warning: 'spi_buffer' defined but not used [-Wunused-variable]
+ static uint8_t spi_buffer[SPI_BUFFER_SIZE];
+                ^~~~~~~~~~
+../main.c:219:35: warning: 'gpio4' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                                   ^~~~~
+../main.c:219:28: warning: 'gpio3' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                            ^~~~~
+../main.c:219:21: warning: 'gpio1' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                     ^~~~~
+make: *** [main.o] Error 1
+subdir.mk:27: recipe for target 'main.o' failed
+00:52:09 **** Auto Build of configuration Debug for project UARTImage ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:420:12: error: too many arguments to function 'UartSend'
+   Status = UartSend(UART_DEVICE_ID, (uint8_t*)(&img_buffer0[buffer_offset]));
+            ^~~~~~~~
+../main.c:209:5: note: declared here
+ int UartSend(u16 DeviceId);
+     ^~~~~~~~
+At top level:
+../main.c:231:16: warning: 'spi_buffer' defined but not used [-Wunused-variable]
+ static uint8_t spi_buffer[SPI_BUFFER_SIZE];
+                ^~~~~~~~~~
+../main.c:219:35: warning: 'gpio4' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                                   ^~~~~
+../main.c:219:28: warning: 'gpio3' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                            ^~~~~
+../main.c:219:21: warning: 'gpio1' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                     ^~~~~
+subdir.mk:27: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+00:52:35 **** Auto Build of configuration Debug for project UARTImage ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:615:5: error: conflicting types for 'UartSend'
+ int UartSend(u16 DeviceId)
+     ^~~~~~~~
+../main.c:209:5: note: previous declaration of 'UartSend' was here
+ int UartSend(u16 DeviceId, uint8_t* img);
+     ^~~~~~~~
+../main.c:231:16: warning: 'spi_buffer' defined but not used [-Wunused-variable]
+ static uint8_t spi_buffer[SPI_BUFFER_SIZE];
+                ^~~~~~~~~~
+../main.c:219:35: warning: 'gpio4' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                                   ^~~~~
+../main.c:219:28: warning: 'gpio3' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                            ^~~~~
+../main.c:219:21: warning: 'gpio1' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                     ^~~~~
+subdir.mk:27: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+00:52:52 **** Auto Build of configuration Debug for project UARTImage ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:231:16: warning: 'spi_buffer' defined but not used [-Wunused-variable]
+ static uint8_t spi_buffer[SPI_BUFFER_SIZE];
+                ^~~~~~~~~~
+../main.c:219:35: warning: 'gpio4' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                                   ^~~~~
+../main.c:219:28: warning: 'gpio3' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                            ^~~~~
+../main.c:219:21: warning: 'gpio1' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                     ^~~~~
+../main.c: In function 'HDPYX_SETUP_TPG':
+../main.c:607:8: warning: 'status' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     if (status != XST_SUCCESS) {
+        ^
+Finished building: ../main.c
+ 
+Building target: UARTImage.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/lib -o "UARTImage.elf"  ./atise_img.o ./atise_vdma.o ./hdpyx_spi.o ./main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: UARTImage.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size UARTImage.elf  |tee "UARTImage.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 126948	   4100	92425664	92556712	5844da8	UARTImage.elf
+Finished building: UARTImage.elf.size
+ 
+00:54:24 **** Incremental Build of configuration Debug for project UARTImage ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: rien à faire pour « main-build ».
+00:56:38 **** Auto Build of configuration Debug for project UARTImage ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'UartSend':
+../main.c:633:5: warning: unused variable 'taille' [-Wunused-variable]
+  u8 taille = sizeof(HelloWorld);
+     ^~~~~~
+At top level:
+../main.c:231:16: warning: 'spi_buffer' defined but not used [-Wunused-variable]
+ static uint8_t spi_buffer[SPI_BUFFER_SIZE];
+                ^~~~~~~~~~
+../main.c:219:35: warning: 'gpio4' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                                   ^~~~~
+../main.c:219:28: warning: 'gpio3' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                            ^~~~~
+../main.c:219:21: warning: 'gpio1' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                     ^~~~~
+../main.c: In function 'HDPYX_SETUP_TPG':
+../main.c:607:8: warning: 'status' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     if (status != XST_SUCCESS) {
+        ^
+Finished building: ../main.c
+ 
+Building target: UARTImage.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/lib -o "UARTImage.elf"  ./atise_img.o ./atise_vdma.o ./hdpyx_spi.o ./main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: UARTImage.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size UARTImage.elf  |tee "UARTImage.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 127012	   4100	92425664	92556776	5844de8	UARTImage.elf
+Finished building: UARTImage.elf.size
+ 
+00:56:45 **** Auto Build of configuration Debug for project UARTImage ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:231:16: warning: 'spi_buffer' defined but not used [-Wunused-variable]
+ static uint8_t spi_buffer[SPI_BUFFER_SIZE];
+                ^~~~~~~~~~
+../main.c:219:35: warning: 'gpio4' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                                   ^~~~~
+../main.c:219:28: warning: 'gpio3' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                            ^~~~~
+../main.c:219:21: warning: 'gpio1' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                     ^~~~~
+../main.c: In function 'HDPYX_SETUP_TPG':
+../main.c:607:8: warning: 'status' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     if (status != XST_SUCCESS) {
+        ^
+Finished building: ../main.c
+ 
+Building target: UARTImage.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/lib -o "UARTImage.elf"  ./atise_img.o ./atise_vdma.o ./hdpyx_spi.o ./main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: UARTImage.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size UARTImage.elf  |tee "UARTImage.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 127012	   4100	92425664	92556776	5844de8	UARTImage.elf
+Finished building: UARTImage.elf.size
+ 
+00:56:55 **** Auto Build of configuration Debug for project UARTImage ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:231:16: warning: 'spi_buffer' defined but not used [-Wunused-variable]
+ static uint8_t spi_buffer[SPI_BUFFER_SIZE];
+                ^~~~~~~~~~
+../main.c:219:35: warning: 'gpio4' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                                   ^~~~~
+../main.c:219:28: warning: 'gpio3' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                            ^~~~~
+../main.c:219:21: warning: 'gpio1' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                     ^~~~~
+../main.c: In function 'HDPYX_SETUP_TPG':
+../main.c:607:8: warning: 'status' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     if (status != XST_SUCCESS) {
+        ^
+Finished building: ../main.c
+ 
+Building target: UARTImage.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/lib -o "UARTImage.elf"  ./atise_img.o ./atise_vdma.o ./hdpyx_spi.o ./main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: UARTImage.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size UARTImage.elf  |tee "UARTImage.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 127012	   4100	92425664	92556776	5844de8	UARTImage.elf
+Finished building: UARTImage.elf.size
+ 
+00:57:13 **** Auto Build of configuration Debug for project UARTImage ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'UartSend':
+../main.c:617:5: warning: unused variable 'HelloWorld' [-Wunused-variable]
+  u8 HelloWorld[] = "Hello World";
+     ^~~~~~~~~~
+At top level:
+../main.c:231:16: warning: 'spi_buffer' defined but not used [-Wunused-variable]
+ static uint8_t spi_buffer[SPI_BUFFER_SIZE];
+                ^~~~~~~~~~
+../main.c:219:35: warning: 'gpio4' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                                   ^~~~~
+../main.c:219:28: warning: 'gpio3' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                            ^~~~~
+../main.c:219:21: warning: 'gpio1' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                     ^~~~~
+../main.c: In function 'HDPYX_SETUP_TPG':
+../main.c:607:8: warning: 'status' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     if (status != XST_SUCCESS) {
+        ^
+Finished building: ../main.c
+ 
+Building target: UARTImage.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/lib -o "UARTImage.elf"  ./atise_img.o ./atise_vdma.o ./hdpyx_spi.o ./main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: UARTImage.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size UARTImage.elf  |tee "UARTImage.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 126948	   4100	92425664	92556712	5844da8	UARTImage.elf
+Finished building: UARTImage.elf.size
+ 
+00:58:36 **** Auto Build of configuration Debug for project UARTImage ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'UartSend':
+../main.c:634:22: error: 'width' undeclared (first use in this function)
+  uint32_t img_size = width * height * 2;
+                      ^~~~~
+../main.c:634:22: note: each undeclared identifier is reported only once for each function it appears in
+../main.c:634:30: error: 'height' undeclared (first use in this function)
+  uint32_t img_size = width * height * 2;
+                              ^~~~~~
+../main.c:635:25: error: 'taille' undeclared (first use in this function)
+  XUartPs_Send(&Uart_Ps,&taille, 1);
+                         ^~~~~~
+../main.c:634:11: warning: unused variable 'img_size' [-Wunused-variable]
+  uint32_t img_size = width * height * 2;
+           ^~~~~~~~
+../main.c:617:5: warning: unused variable 'HelloWorld' [-Wunused-variable]
+  u8 HelloWorld[] = "Hello World";
+     ^~~~~~~~~~
+At top level:
+../main.c:231:16: warning: 'spi_buffer' defined but not used [-Wunused-variable]
+ static uint8_t spi_buffer[SPI_BUFFER_SIZE];
+                ^~~~~~~~~~
+../main.c:219:35: warning: 'gpio4' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                                   ^~~~~
+../main.c:219:28: warning: 'gpio3' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                            ^~~~~
+../main.c:219:21: warning: 'gpio1' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                     ^~~~~
+make: *** [main.o] Error 1
+subdir.mk:27: recipe for target 'main.o' failed
+00:58:44 **** Auto Build of configuration Debug for project UARTImage ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'UartSend':
+../main.c:634:22: error: 'width' undeclared (first use in this function)
+  uint32_t img_size = width * height * 2;
+                      ^~~~~
+../main.c:634:22: note: each undeclared identifier is reported only once for each function it appears in
+../main.c:634:30: error: 'height' undeclared (first use in this function)
+  uint32_t img_size = width * height * 2;
+                              ^~~~~~
+../main.c:635:24: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart_Ps,&img_size, 1);
+                        ^~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint32_t *' {aka 'long unsigned int *'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+../main.c:617:5: warning: unused variable 'HelloWorld' [-Wunused-variable]
+  u8 HelloWorld[] = "Hello World";
+     ^~~~~~~~~~
+At top level:
+../main.c:231:16: warning: 'spi_buffer' defined but not used [-Wunused-variable]
+ static uint8_t spi_buffer[SPI_BUFFER_SIZE];
+                ^~~~~~~~~~
+../main.c:219:35: warning: 'gpio4' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                                   ^~~~~
+../main.c:219:28: warning: 'gpio3' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                            ^~~~~
+../main.c:219:21: warning: 'gpio1' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                     ^~~~~
+subdir.mk:27: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+00:59:04 **** Auto Build of configuration Debug for project UARTImage ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:615:5: error: conflicting types for 'UartSend'
+ int UartSend(u16 DeviceId, uint8_t* img, uint32_t width, uint32_t height)
+     ^~~~~~~~
+../main.c:209:5: note: previous declaration of 'UartSend' was here
+ int UartSend(u16 DeviceId, uint8_t* img);
+     ^~~~~~~~
+../main.c: In function 'UartSend':
+../main.c:635:24: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart_Ps,&img_size, 1);
+                        ^~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint32_t *' {aka 'long unsigned int *'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+../main.c:617:5: warning: unused variable 'HelloWorld' [-Wunused-variable]
+  u8 HelloWorld[] = "Hello World";
+     ^~~~~~~~~~
+At top level:
+../main.c:231:16: warning: 'spi_buffer' defined but not used [-Wunused-variable]
+ static uint8_t spi_buffer[SPI_BUFFER_SIZE];
+                ^~~~~~~~~~
+../main.c:219:35: warning: 'gpio4' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                                   ^~~~~
+../main.c:219:28: warning: 'gpio3' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                            ^~~~~
+../main.c:219:21: warning: 'gpio1' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                     ^~~~~
+make: *** [main.o] Error 1
+subdir.mk:27: recipe for target 'main.o' failed
+00:59:17 **** Auto Build of configuration Debug for project UARTImage ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:420:12: error: too few arguments to function 'UartSend'
+   Status = UartSend(UART_DEVICE_ID, (uint8_t*)(&img_buffer0[buffer_offset]));
+            ^~~~~~~~
+../main.c:209:5: note: declared here
+ int UartSend(u16 DeviceId, uint8_t* img, uint32_t width, uint32_t height);
+     ^~~~~~~~
+../main.c: In function 'UartSend':
+../main.c:635:24: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart_Ps,&img_size, 1);
+                        ^~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint32_t *' {aka 'long unsigned int *'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+../main.c:617:5: warning: unused variable 'HelloWorld' [-Wunused-variable]
+  u8 HelloWorld[] = "Hello World";
+     ^~~~~~~~~~
+At top level:
+../main.c:231:16: warning: 'spi_buffer' defined but not used [-Wunused-variable]
+ static uint8_t spi_buffer[SPI_BUFFER_SIZE];
+                ^~~~~~~~~~
+../main.c:219:35: warning: 'gpio4' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                                   ^~~~~
+../main.c:219:28: warning: 'gpio3' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                            ^~~~~
+../main.c:219:21: warning: 'gpio1' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                     ^~~~~
+make: *** [main.o] Error 1
+subdir.mk:27: recipe for target 'main.o' failed
+00:59:41 **** Auto Build of configuration Debug for project UARTImage ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'UartSend':
+../main.c:635:24: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart_Ps,&img_size, 1);
+                        ^~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint32_t *' {aka 'long unsigned int *'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+../main.c:617:5: warning: unused variable 'HelloWorld' [-Wunused-variable]
+  u8 HelloWorld[] = "Hello World";
+     ^~~~~~~~~~
+At top level:
+../main.c:231:16: warning: 'spi_buffer' defined but not used [-Wunused-variable]
+ static uint8_t spi_buffer[SPI_BUFFER_SIZE];
+                ^~~~~~~~~~
+../main.c:219:35: warning: 'gpio4' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                                   ^~~~~
+../main.c:219:28: warning: 'gpio3' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                            ^~~~~
+../main.c:219:21: warning: 'gpio1' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                     ^~~~~
+../main.c: In function 'HDPYX_SETUP_TPG':
+../main.c:607:8: warning: 'status' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     if (status != XST_SUCCESS) {
+        ^
+Finished building: ../main.c
+ 
+Building target: UARTImage.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/lib -o "UARTImage.elf"  ./atise_img.o ./atise_vdma.o ./hdpyx_spi.o ./main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: UARTImage.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size UARTImage.elf  |tee "UARTImage.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 126948	   4100	92425664	92556712	5844da8	UARTImage.elf
+Finished building: UARTImage.elf.size
+ 
+00:59:44 **** Auto Build of configuration Debug for project UARTImage ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'UartSend':
+../main.c:635:24: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart_Ps,&img_size, 1);
+                        ^~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint32_t *' {aka 'long unsigned int *'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+../main.c:617:5: warning: unused variable 'HelloWorld' [-Wunused-variable]
+  u8 HelloWorld[] = "Hello World";
+     ^~~~~~~~~~
+At top level:
+../main.c:231:16: warning: 'spi_buffer' defined but not used [-Wunused-variable]
+ static uint8_t spi_buffer[SPI_BUFFER_SIZE];
+                ^~~~~~~~~~
+../main.c:219:35: warning: 'gpio4' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                                   ^~~~~
+../main.c:219:28: warning: 'gpio3' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                            ^~~~~
+../main.c:219:21: warning: 'gpio1' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                     ^~~~~
+../main.c: In function 'HDPYX_SETUP_TPG':
+../main.c:607:8: warning: 'status' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     if (status != XST_SUCCESS) {
+        ^
+Finished building: ../main.c
+ 
+Building target: UARTImage.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/lib -o "UARTImage.elf"  ./atise_img.o ./atise_vdma.o ./hdpyx_spi.o ./main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: UARTImage.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size UARTImage.elf  |tee "UARTImage.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 126948	   4100	92425664	92556712	5844da8	UARTImage.elf
+Finished building: UARTImage.elf.size
+ 
+01:00:25 **** Auto Build of configuration Debug for project UARTImage ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'UartSend':
+../main.c:634:24: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart_Ps,&img_size, 4);
+                        ^~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint32_t *' {aka 'long unsigned int *'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+At top level:
+../main.c:231:16: warning: 'spi_buffer' defined but not used [-Wunused-variable]
+ static uint8_t spi_buffer[SPI_BUFFER_SIZE];
+                ^~~~~~~~~~
+../main.c:219:35: warning: 'gpio4' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                                   ^~~~~
+../main.c:219:28: warning: 'gpio3' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                            ^~~~~
+../main.c:219:21: warning: 'gpio1' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                     ^~~~~
+../main.c: In function 'HDPYX_SETUP_TPG':
+../main.c:607:8: warning: 'status' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     if (status != XST_SUCCESS) {
+        ^
+Finished building: ../main.c
+ 
+Building target: UARTImage.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/lib -o "UARTImage.elf"  ./atise_img.o ./atise_vdma.o ./hdpyx_spi.o ./main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: UARTImage.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size UARTImage.elf  |tee "UARTImage.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 126932	   4100	92425664	92556696	5844d98	UARTImage.elf
+Finished building: UARTImage.elf.size
+ 
+01:00:51 **** Incremental Build of configuration Debug for project UARTImage ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: rien à faire pour « main-build ».
+01:02:53 **** Auto Build of configuration Debug for project UARTImage ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'UartSend':
+../main.c:634:24: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart_Ps,&img, img_size);
+                        ^~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint8_t **' {aka 'unsigned char **'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+At top level:
+../main.c:231:16: warning: 'spi_buffer' defined but not used [-Wunused-variable]
+ static uint8_t spi_buffer[SPI_BUFFER_SIZE];
+                ^~~~~~~~~~
+../main.c:219:35: warning: 'gpio4' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                                   ^~~~~
+../main.c:219:28: warning: 'gpio3' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                            ^~~~~
+../main.c:219:21: warning: 'gpio1' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                     ^~~~~
+../main.c: In function 'HDPYX_SETUP_TPG':
+../main.c:607:8: warning: 'status' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     if (status != XST_SUCCESS) {
+        ^
+Finished building: ../main.c
+ 
+Building target: UARTImage.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/lib -o "UARTImage.elf"  ./atise_img.o ./atise_vdma.o ./hdpyx_spi.o ./main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: UARTImage.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size UARTImage.elf  |tee "UARTImage.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 126932	   4100	92425664	92556696	5844d98	UARTImage.elf
+Finished building: UARTImage.elf.size
+ 
+01:04:15 **** Incremental Build of configuration Debug for project UARTImage ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: rien à faire pour « main-build ».
+01:05:58 **** Auto Build of configuration Debug for project UARTImage ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'UartSend':
+../main.c:635:24: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart_Ps,&img, img_size);
+                        ^~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint8_t **' {aka 'unsigned char **'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+At top level:
+../main.c:231:16: warning: 'spi_buffer' defined but not used [-Wunused-variable]
+ static uint8_t spi_buffer[SPI_BUFFER_SIZE];
+                ^~~~~~~~~~
+../main.c:219:35: warning: 'gpio4' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                                   ^~~~~
+../main.c:219:28: warning: 'gpio3' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                            ^~~~~
+../main.c:219:21: warning: 'gpio1' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                     ^~~~~
+../main.c: In function 'HDPYX_SETUP_TPG':
+../main.c:608:8: warning: 'status' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     if (status != XST_SUCCESS) {
+        ^
+Finished building: ../main.c
+ 
+Building target: UARTImage.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/lib -o "UARTImage.elf"  ./atise_img.o ./atise_vdma.o ./hdpyx_spi.o ./main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: UARTImage.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size UARTImage.elf  |tee "UARTImage.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 126460	   4100	92425664	92556224	5844bc0	UARTImage.elf
+Finished building: UARTImage.elf.size
+ 
+01:06:30 **** Incremental Build of configuration Debug for project UARTImage ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: rien à faire pour « main-build ».
