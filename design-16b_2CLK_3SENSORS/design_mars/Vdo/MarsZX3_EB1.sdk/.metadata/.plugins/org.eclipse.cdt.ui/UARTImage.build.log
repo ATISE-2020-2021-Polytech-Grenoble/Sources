@@ -1,8 +1,8 @@
-01:06:30 **** Incremental Build of configuration Debug for project UARTImage ****
+01:57:28 **** Incremental Build of configuration Debug for project UARTImage ****
 make pre-build main-build 
 a9-linaro-pre-build-step
  
 make: rien à faire pour « main-build ».
 
-01:06:31 Build Finished (took 614ms)
+01:57:29 Build Finished (took 563ms)
 

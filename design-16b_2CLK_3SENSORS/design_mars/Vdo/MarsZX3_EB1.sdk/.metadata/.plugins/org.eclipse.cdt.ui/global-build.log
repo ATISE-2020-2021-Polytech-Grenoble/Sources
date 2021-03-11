@@ -1548,3 +1548,1364 @@ make pre-build main-build
 a9-linaro-pre-build-step
  
 make: rien à faire pour « main-build ».
+01:18:06 **** Auto Build of configuration Debug for project UARTImage ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'UartSend':
+../main.c:634:2: error: unknown type name 'UINT'
+  UINT bw;
+  ^~~~
+../main.c:645:3: warning: implicit declaration of function 'f_write'; did you mean 'fwrite'? [-Wimplicit-function-declaration]
+   f_write(&file, &signature, 2, &bw);
+   ^~~~~~~
+   fwrite
+../main.c:645:12: error: 'file' undeclared (first use in this function); did you mean 'fileno'?
+   f_write(&file, &signature, 2, &bw);
+            ^~~~
+            fileno
+../main.c:645:12: note: each undeclared identifier is reported only once for each function it appears in
+../main.c:663:24: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart_Ps,&img, img_size);
+                        ^~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint8_t **' {aka 'unsigned char **'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+At top level:
+../main.c:231:16: warning: 'spi_buffer' defined but not used [-Wunused-variable]
+ static uint8_t spi_buffer[SPI_BUFFER_SIZE];
+                ^~~~~~~~~~
+../main.c:219:35: warning: 'gpio4' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                                   ^~~~~
+../main.c:219:28: warning: 'gpio3' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                            ^~~~~
+../main.c:219:21: warning: 'gpio1' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                     ^~~~~
+subdir.mk:27: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+01:19:09 **** Auto Build of configuration Debug for project UARTImage ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'UartSend':
+../main.c:644:2: warning: implicit declaration of function 'f_write'; did you mean 'fwrite'? [-Wimplicit-function-declaration]
+  f_write(&file, &signature, 2, &bw);
+  ^~~~~~~
+  fwrite
+../main.c:644:11: error: 'file' undeclared (first use in this function); did you mean 'fileno'?
+  f_write(&file, &signature, 2, &bw);
+           ^~~~
+           fileno
+../main.c:644:11: note: each undeclared identifier is reported only once for each function it appears in
+../main.c:644:33: error: 'bw' undeclared (first use in this function)
+  f_write(&file, &signature, 2, &bw);
+                                 ^~
+../main.c:662:24: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart_Ps,&img, img_size);
+                        ^~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint8_t **' {aka 'unsigned char **'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+At top level:
+../main.c:231:16: warning: 'spi_buffer' defined but not used [-Wunused-variable]
+ static uint8_t spi_buffer[SPI_BUFFER_SIZE];
+                ^~~~~~~~~~
+../main.c:219:35: warning: 'gpio4' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                                   ^~~~~
+../main.c:219:28: warning: 'gpio3' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                            ^~~~~
+../main.c:219:21: warning: 'gpio1' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                     ^~~~~
+make: *** [main.o] Error 1
+subdir.mk:27: recipe for target 'main.o' failed
+01:19:32 **** Auto Build of configuration Debug for project UARTImage ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'UartSend':
+../main.c:644:25: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart_Ps, &signature, 2);
+                         ^~~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+../main.c:645:2: warning: implicit declaration of function 'f_write'; did you mean 'fwrite'? [-Wimplicit-function-declaration]
+  f_write(&file, &newline, 1, &bw);
+  ^~~~~~~
+  fwrite
+../main.c:645:11: error: 'file' undeclared (first use in this function); did you mean 'fileno'?
+  f_write(&file, &newline, 1, &bw);
+           ^~~~
+           fileno
+../main.c:645:11: note: each undeclared identifier is reported only once for each function it appears in
+../main.c:645:31: error: 'bw' undeclared (first use in this function)
+  f_write(&file, &newline, 1, &bw);
+                               ^~
+../main.c:662:24: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart_Ps,&img, img_size);
+                        ^~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint8_t **' {aka 'unsigned char **'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+At top level:
+../main.c:231:16: warning: 'spi_buffer' defined but not used [-Wunused-variable]
+ static uint8_t spi_buffer[SPI_BUFFER_SIZE];
+                ^~~~~~~~~~
+../main.c:219:35: warning: 'gpio4' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                                   ^~~~~
+../main.c:219:28: warning: 'gpio3' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                            ^~~~~
+../main.c:219:21: warning: 'gpio1' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                     ^~~~~
+subdir.mk:27: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+01:19:42 **** Auto Build of configuration Debug for project UARTImage ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'UartSend':
+../main.c:644:25: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart_Ps, &signature, 2);
+                         ^~~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+../main.c:649:2: warning: implicit declaration of function 'f_write'; did you mean 'fwrite'? [-Wimplicit-function-declaration]
+  f_write(&file, str_width, len, &bw);
+  ^~~~~~~
+  fwrite
+../main.c:649:11: error: 'file' undeclared (first use in this function); did you mean 'fileno'?
+  f_write(&file, str_width, len, &bw);
+           ^~~~
+           fileno
+../main.c:649:11: note: each undeclared identifier is reported only once for each function it appears in
+../main.c:649:34: error: 'bw' undeclared (first use in this function)
+  f_write(&file, str_width, len, &bw);
+                                  ^~
+../main.c:662:24: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart_Ps,&img, img_size);
+                        ^~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint8_t **' {aka 'unsigned char **'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+At top level:
+../main.c:231:16: warning: 'spi_buffer' defined but not used [-Wunused-variable]
+ static uint8_t spi_buffer[SPI_BUFFER_SIZE];
+                ^~~~~~~~~~
+../main.c:219:35: warning: 'gpio4' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                                   ^~~~~
+../main.c:219:28: warning: 'gpio3' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                            ^~~~~
+../main.c:219:21: warning: 'gpio1' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                     ^~~~~
+make: *** [main.o] Error 1
+subdir.mk:27: recipe for target 'main.o' failed
+01:20:01 **** Auto Build of configuration Debug for project UARTImage ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'UartSend':
+../main.c:644:25: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart_Ps, &signature, 2);
+                         ^~~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+../main.c:649:25: warning: pointer targets in passing argument 2 of 'XUartPs_Send' differ in signedness [-Wpointer-sign]
+  XUartPs_Send(&Uart_Ps, str_width, len);
+                         ^~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:5: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'char *'
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+     ^~~~~~~~~~~~
+../main.c:650:2: warning: implicit declaration of function 'f_write'; did you mean 'fwrite'? [-Wimplicit-function-declaration]
+  f_write(&file, &whitespace, 1, &bw);
+  ^~~~~~~
+  fwrite
+../main.c:650:11: error: 'file' undeclared (first use in this function); did you mean 'fileno'?
+  f_write(&file, &whitespace, 1, &bw);
+           ^~~~
+           fileno
+../main.c:650:11: note: each undeclared identifier is reported only once for each function it appears in
+../main.c:650:34: error: 'bw' undeclared (first use in this function)
+  f_write(&file, &whitespace, 1, &bw);
+                                  ^~
+../main.c:662:24: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart_Ps,&img, img_size);
+                        ^~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint8_t **' {aka 'unsigned char **'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+At top level:
+../main.c:231:16: warning: 'spi_buffer' defined but not used [-Wunused-variable]
+ static uint8_t spi_buffer[SPI_BUFFER_SIZE];
+                ^~~~~~~~~~
+../main.c:219:35: warning: 'gpio4' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                                   ^~~~~
+../main.c:219:28: warning: 'gpio3' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                            ^~~~~
+../main.c:219:21: warning: 'gpio1' defined but not used [-Wunused-variable]
+subdir.mk:27: recipe for target 'main.o' failed
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                     ^~~~~
+make: *** [main.o] Error 1
+01:20:11 **** Auto Build of configuration Debug for project UARTImage ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'UartSend':
+../main.c:644:25: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart_Ps, &signature, 2);
+                         ^~~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+../main.c:649:25: warning: pointer targets in passing argument 2 of 'XUartPs_Send' differ in signedness [-Wpointer-sign]
+  XUartPs_Send(&Uart_Ps, str_width, len);
+                         ^~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:5: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'char *'
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+     ^~~~~~~~~~~~
+../main.c:652:2: warning: implicit declaration of function 'f_write'; did you mean 'fwrite'? [-Wimplicit-function-declaration]
+  f_write(&file, str_height, len, &bw);
+  ^~~~~~~
+  fwrite
+../main.c:652:11: error: 'file' undeclared (first use in this function); did you mean 'fileno'?
+  f_write(&file, str_height, len, &bw);
+           ^~~~
+           fileno
+../main.c:652:11: note: each undeclared identifier is reported only once for each function it appears in
+../main.c:652:35: error: 'bw' undeclared (first use in this function)
+  f_write(&file, str_height, len, &bw);
+                                   ^~
+../main.c:662:24: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart_Ps,&img, img_size);
+                        ^~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint8_t **' {aka 'unsigned char **'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+At top level:
+../main.c:231:16: warning: 'spi_buffer' defined but not used [-Wunused-variable]
+ static uint8_t spi_buffer[SPI_BUFFER_SIZE];
+subdir.mk:27: recipe for target 'main.o' failed
+                ^~~~~~~~~~
+../main.c:219:35: warning: 'gpio4' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                                   ^~~~~
+../main.c:219:28: warning: 'gpio3' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                            ^~~~~
+../main.c:219:21: warning: 'gpio1' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                     ^~~~~
+make: *** [main.o] Error 1
+01:20:19 **** Auto Build of configuration Debug for project UARTImage ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'UartSend':
+../main.c:644:25: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart_Ps, &signature, 2);
+                         ^~~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+../main.c:649:25: warning: pointer targets in passing argument 2 of 'XUartPs_Send' differ in signedness [-Wpointer-sign]
+  XUartPs_Send(&Uart_Ps, str_width, len);
+                         ^~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:5: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'char *'
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+     ^~~~~~~~~~~~
+../main.c:652:25: warning: pointer targets in passing argument 2 of 'XUartPs_Send' differ in signedness [-Wpointer-sign]
+  XUartPs_Send(&Uart_Ps, str_height, len);
+                         ^~~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:5: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'char *'
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+     ^~~~~~~~~~~~
+../main.c:653:2: warning: implicit declaration of function 'f_write'; did you mean 'fwrite'? [-Wimplicit-function-declaration]
+  f_write(&file, &newline, 1, &bw);
+  ^~~~~~~
+  fwrite
+../main.c:653:11: error: 'file' undeclared (first use in this function); did you mean 'fileno'?
+  f_write(&file, &newline, 1, &bw);
+           ^~~~
+           fileno
+../main.c:653:11: note: each undeclared identifier is reported only once for each function it appears in
+../main.c:653:31: error: 'bw' undeclared (first use in this function)
+  f_write(&file, &newline, 1, &bw);
+                               ^~
+../main.c:662:24: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart_Ps,&img, img_size);
+                        ^~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint8_t **' {aka 'unsigned char **'}
+subdir.mk:27: recipe for target 'main.o' failed
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+At top level:
+../main.c:231:16: warning: 'spi_buffer' defined but not used [-Wunused-variable]
+ static uint8_t spi_buffer[SPI_BUFFER_SIZE];
+                ^~~~~~~~~~
+../main.c:219:35: warning: 'gpio4' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                                   ^~~~~
+../main.c:219:28: warning: 'gpio3' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                            ^~~~~
+../main.c:219:21: warning: 'gpio1' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                     ^~~~~
+make: *** [main.o] Error 1
+01:20:26 **** Auto Build of configuration Debug for project UARTImage ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'UartSend':
+../main.c:644:25: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart_Ps, &signature, 2);
+                         ^~~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+../main.c:649:25: warning: pointer targets in passing argument 2 of 'XUartPs_Send' differ in signedness [-Wpointer-sign]
+  XUartPs_Send(&Uart_Ps, str_width, len);
+                         ^~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:5: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'char *'
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+     ^~~~~~~~~~~~
+../main.c:652:25: warning: pointer targets in passing argument 2 of 'XUartPs_Send' differ in signedness [-Wpointer-sign]
+  XUartPs_Send(&Uart_Ps, str_height, len);
+                         ^~~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:5: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'char *'
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+     ^~~~~~~~~~~~
+../main.c:659:2: warning: implicit declaration of function 'f_write'; did you mean 'fwrite'? [-Wimplicit-function-declaration]
+  f_write(&file, &end, 5, &bw);
+  ^~~~~~~
+  fwrite
+../main.c:659:11: error: 'file' undeclared (first use in this function); did you mean 'fileno'?
+  f_write(&file, &end, 5, &bw);
+           ^~~~
+           fileno
+../main.c:659:11: note: each undeclared identifier is reported only once for each function it appears in
+../main.c:659:27: error: 'bw' undeclared (first use in this function)
+subdir.mk:27: recipe for target 'main.o' failed
+  f_write(&file, &end, 5, &bw);
+                           ^~
+../main.c:662:24: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart_Ps,&img, img_size);
+                        ^~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint8_t **' {aka 'unsigned char **'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+At top level:
+../main.c:231:16: warning: 'spi_buffer' defined but not used [-Wunused-variable]
+ static uint8_t spi_buffer[SPI_BUFFER_SIZE];
+                ^~~~~~~~~~
+../main.c:219:35: warning: 'gpio4' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                                   ^~~~~
+../main.c:219:28: warning: 'gpio3' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                            ^~~~~
+../main.c:219:21: warning: 'gpio1' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                     ^~~~~
+make: *** [main.o] Error 1
+01:20:35 **** Auto Build of configuration Debug for project UARTImage ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'UartSend':
+../main.c:644:25: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart_Ps, &signature, 2);
+                         ^~~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+../main.c:649:25: warning: pointer targets in passing argument 2 of 'XUartPs_Send' differ in signedness [-Wpointer-sign]
+  XUartPs_Send(&Uart_Ps, str_width, len);
+                         ^~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:5: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'char *'
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+     ^~~~~~~~~~~~
+../main.c:652:25: warning: pointer targets in passing argument 2 of 'XUartPs_Send' differ in signedness [-Wpointer-sign]
+  XUartPs_Send(&Uart_Ps, str_height, len);
+                         ^~~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:5: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'char *'
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+     ^~~~~~~~~~~~
+../main.c:659:25: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart_Ps, &end, 5);
+                         ^~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint64_t *' {aka 'long long unsigned int *'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+../main.c:660:2: warning: implicit declaration of function 'f_write'; did you mean 'fwrite'? [-Wimplicit-function-declaration]
+  f_write(&file, &newline, 1, &bw);
+  ^~~~~~~
+  fwrite
+../main.c:660:11: error: 'file' undeclared (first use in this function); did you mean 'fileno'?
+  f_write(&file, &newline, 1, &bw);
+           ^~~~
+           fileno
+../main.c:660:11: note: each undeclared identifier is reported only once for each function it appears in
+../main.c:660:31: error: 'bw' undeclared (first use in this function)
+  f_write(&file, &newline, 1, &bw);
+                               ^~
+../main.c:662:24: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart_Ps,&img, img_size);
+                        ^~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint8_t **' {aka 'unsigned char **'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+subdir.mk:27: recipe for target 'main.o' failed
+At top level:
+../main.c:231:16: warning: 'spi_buffer' defined but not used [-Wunused-variable]
+ static uint8_t spi_buffer[SPI_BUFFER_SIZE];
+                ^~~~~~~~~~
+../main.c:219:35: warning: 'gpio4' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                                   ^~~~~
+../main.c:219:28: warning: 'gpio3' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                            ^~~~~
+../main.c:219:21: warning: 'gpio1' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                     ^~~~~
+make: *** [main.o] Error 1
+01:20:42 **** Auto Build of configuration Debug for project UARTImage ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'UartSend':
+../main.c:644:25: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart_Ps, &signature, 2);
+                         ^~~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+../main.c:649:25: warning: pointer targets in passing argument 2 of 'XUartPs_Send' differ in signedness [-Wpointer-sign]
+  XUartPs_Send(&Uart_Ps, str_width, len);
+                         ^~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:5: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'char *'
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+     ^~~~~~~~~~~~
+../main.c:652:25: warning: pointer targets in passing argument 2 of 'XUartPs_Send' differ in signedness [-Wpointer-sign]
+  XUartPs_Send(&Uart_Ps, str_height, len);
+                         ^~~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:5: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'char *'
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+     ^~~~~~~~~~~~
+../main.c:659:25: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart_Ps, &end, 5);
+                         ^~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint64_t *' {aka 'long long unsigned int *'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+../main.c:662:24: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart_Ps,&img, img_size);
+                        ^~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint8_t **' {aka 'unsigned char **'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+At top level:
+../main.c:231:16: warning: 'spi_buffer' defined but not used [-Wunused-variable]
+ static uint8_t spi_buffer[SPI_BUFFER_SIZE];
+                ^~~~~~~~~~
+../main.c:219:35: warning: 'gpio4' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                                   ^~~~~
+../main.c:219:28: warning: 'gpio3' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                            ^~~~~
+../main.c:219:21: warning: 'gpio1' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                     ^~~~~
+../main.c: In function 'HDPYX_SETUP_TPG':
+../main.c:608:8: warning: 'status' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     if (status != XST_SUCCESS) {
+        ^
+Finished building: ../main.c
+ 
+Building target: UARTImage.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/lib -o "UARTImage.elf"  ./atise_img.o ./atise_vdma.o ./hdpyx_spi.o ./main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: UARTImage.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size UARTImage.elf  |tee "UARTImage.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 126724	   4100	92425664	92556488	5844cc8	UARTImage.elf
+Finished building: UARTImage.elf.size
+ 
+01:22:01 **** Incremental Build of configuration Debug for project UARTImage ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: rien à faire pour « main-build ».
+01:24:33 **** Auto Build of configuration Debug for project UARTImage ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'UartSend':
+../main.c:644:25: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart_Ps, &signature, 2);
+                         ^~~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+../main.c:649:25: warning: pointer targets in passing argument 2 of 'XUartPs_Send' differ in signedness [-Wpointer-sign]
+  XUartPs_Send(&Uart_Ps, str_width, len);
+                         ^~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:5: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'char *'
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+     ^~~~~~~~~~~~
+../main.c:652:25: warning: pointer targets in passing argument 2 of 'XUartPs_Send' differ in signedness [-Wpointer-sign]
+  XUartPs_Send(&Uart_Ps, str_height, len);
+                         ^~~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:5: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'char *'
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+     ^~~~~~~~~~~~
+../main.c:658:24: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart_Ps,&img, img_size);
+                        ^~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint8_t **' {aka 'unsigned char **'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+../main.c:660:25: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart_Ps, &end, 5);
+                         ^~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint64_t *' {aka 'long long unsigned int *'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+../main.c:663:24: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart_Ps,&img, img_size);
+                        ^~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint8_t **' {aka 'unsigned char **'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+At top level:
+../main.c:231:16: warning: 'spi_buffer' defined but not used [-Wunused-variable]
+ static uint8_t spi_buffer[SPI_BUFFER_SIZE];
+                ^~~~~~~~~~
+../main.c:219:35: warning: 'gpio4' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                                   ^~~~~
+../main.c:219:28: warning: 'gpio3' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                            ^~~~~
+../main.c:219:21: warning: 'gpio1' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                     ^~~~~
+../main.c: In function 'HDPYX_SETUP_TPG':
+../main.c:608:8: warning: 'status' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     if (status != XST_SUCCESS) {
+        ^
+Finished building: ../main.c
+ 
+Building target: UARTImage.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/lib -o "UARTImage.elf"  ./atise_img.o ./atise_vdma.o ./hdpyx_spi.o ./main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: UARTImage.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size UARTImage.elf  |tee "UARTImage.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 126792	   4100	92425664	92556556	5844d0c	UARTImage.elf
+Finished building: UARTImage.elf.size
+ 
+01:27:38 **** Incremental Build of configuration Debug for project UARTImage ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: rien à faire pour « main-build ».
+01:30:44 **** Auto Build of configuration Debug for project UARTImage ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'UartSend':
+../main.c:644:25: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart_Ps, &signature, 2);
+                         ^~~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+../main.c:649:25: warning: pointer targets in passing argument 2 of 'XUartPs_Send' differ in signedness [-Wpointer-sign]
+  XUartPs_Send(&Uart_Ps, str_width, len);
+                         ^~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:5: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'char *'
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+     ^~~~~~~~~~~~
+../main.c:652:25: warning: pointer targets in passing argument 2 of 'XUartPs_Send' differ in signedness [-Wpointer-sign]
+  XUartPs_Send(&Uart_Ps, str_height, len);
+                         ^~~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:5: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'char *'
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+     ^~~~~~~~~~~~
+../main.c:658:24: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart_Ps,&img, img_size);
+                        ^~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint8_t **' {aka 'unsigned char **'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+../main.c:660:25: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart_Ps, &end, 5);
+                         ^~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint64_t *' {aka 'long long unsigned int *'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+../main.c:663:24: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart_Ps,&img, img_size);
+                        ^~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint8_t **' {aka 'unsigned char **'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+At top level:
+../main.c:231:16: warning: 'spi_buffer' defined but not used [-Wunused-variable]
+ static uint8_t spi_buffer[SPI_BUFFER_SIZE];
+                ^~~~~~~~~~
+../main.c:219:35: warning: 'gpio4' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                                   ^~~~~
+../main.c:219:28: warning: 'gpio3' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                            ^~~~~
+../main.c:219:21: warning: 'gpio1' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                     ^~~~~
+../main.c: In function 'HDPYX_SETUP_TPG':
+../main.c:608:8: warning: 'status' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     if (status != XST_SUCCESS) {
+        ^
+Finished building: ../main.c
+ 
+Building target: UARTImage.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/lib -o "UARTImage.elf"  ./atise_img.o ./atise_vdma.o ./hdpyx_spi.o ./main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: UARTImage.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size UARTImage.elf  |tee "UARTImage.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 126792	   4100	92425664	92556556	5844d0c	UARTImage.elf
+Finished building: UARTImage.elf.size
+ 
+01:30:48 **** Auto Build of configuration Debug for project UARTImage ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'UartSend':
+../main.c:644:25: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart_Ps, &signature, 2);
+                         ^~~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+../main.c:649:25: warning: pointer targets in passing argument 2 of 'XUartPs_Send' differ in signedness [-Wpointer-sign]
+  XUartPs_Send(&Uart_Ps, str_width, len);
+                         ^~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:5: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'char *'
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+     ^~~~~~~~~~~~
+../main.c:652:25: warning: pointer targets in passing argument 2 of 'XUartPs_Send' differ in signedness [-Wpointer-sign]
+  XUartPs_Send(&Uart_Ps, str_height, len);
+                         ^~~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:5: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'char *'
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+     ^~~~~~~~~~~~
+../main.c:658:24: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart_Ps,&img, img_size);
+                        ^~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint8_t **' {aka 'unsigned char **'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+../main.c:660:25: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart_Ps, &end, 5);
+                         ^~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint64_t *' {aka 'long long unsigned int *'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+At top level:
+../main.c:231:16: warning: 'spi_buffer' defined but not used [-Wunused-variable]
+ static uint8_t spi_buffer[SPI_BUFFER_SIZE];
+                ^~~~~~~~~~
+../main.c:219:35: warning: 'gpio4' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                                   ^~~~~
+../main.c:219:28: warning: 'gpio3' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                            ^~~~~
+../main.c:219:21: warning: 'gpio1' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                     ^~~~~
+../main.c: In function 'HDPYX_SETUP_TPG':
+../main.c:608:8: warning: 'status' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     if (status != XST_SUCCESS) {
+        ^
+Finished building: ../main.c
+ 
+Building target: UARTImage.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/lib -o "UARTImage.elf"  ./atise_img.o ./atise_vdma.o ./hdpyx_spi.o ./main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: UARTImage.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size UARTImage.elf  |tee "UARTImage.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 126724	   4100	92425664	92556488	5844cc8	UARTImage.elf
+Finished building: UARTImage.elf.size
+ 
+01:31:32 **** Incremental Build of configuration Debug for project UARTImage ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: rien à faire pour « main-build ».
+01:33:34 **** Auto Build of configuration Debug for project UARTImage ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'UartSend':
+../main.c:644:25: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart_Ps, &signature, 2);
+                         ^~~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+../main.c:649:25: warning: pointer targets in passing argument 2 of 'XUartPs_Send' differ in signedness [-Wpointer-sign]
+  XUartPs_Send(&Uart_Ps, str_width, len);
+                         ^~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:5: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'char *'
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+     ^~~~~~~~~~~~
+../main.c:652:25: warning: pointer targets in passing argument 2 of 'XUartPs_Send' differ in signedness [-Wpointer-sign]
+  XUartPs_Send(&Uart_Ps, str_height, len);
+                         ^~~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:5: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'char *'
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+     ^~~~~~~~~~~~
+../main.c:659:25: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart_Ps, &end, 5);
+                         ^~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint64_t *' {aka 'long long unsigned int *'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+../main.c:662:24: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart_Ps,&img, img_size);
+                        ^~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint8_t **' {aka 'unsigned char **'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+At top level:
+../main.c:231:16: warning: 'spi_buffer' defined but not used [-Wunused-variable]
+ static uint8_t spi_buffer[SPI_BUFFER_SIZE];
+                ^~~~~~~~~~
+../main.c:219:35: warning: 'gpio4' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                                   ^~~~~
+../main.c:219:28: warning: 'gpio3' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                            ^~~~~
+../main.c:219:21: warning: 'gpio1' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                     ^~~~~
+../main.c: In function 'HDPYX_SETUP_TPG':
+../main.c:608:8: warning: 'status' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     if (status != XST_SUCCESS) {
+        ^
+Finished building: ../main.c
+ 
+Building target: UARTImage.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/lib -o "UARTImage.elf"  ./atise_img.o ./atise_vdma.o ./hdpyx_spi.o ./main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: UARTImage.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size UARTImage.elf  |tee "UARTImage.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 126724	   4100	92425664	92556488	5844cc8	UARTImage.elf
+Finished building: UARTImage.elf.size
+ 
+01:33:38 **** Auto Build of configuration Debug for project UARTImage ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'UartSend':
+../main.c:644:25: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart_Ps, &signature, 2);
+                         ^~~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+../main.c:649:25: warning: pointer targets in passing argument 2 of 'XUartPs_Send' differ in signedness [-Wpointer-sign]
+  XUartPs_Send(&Uart_Ps, str_width, len);
+                         ^~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:5: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'char *'
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+     ^~~~~~~~~~~~
+../main.c:652:25: warning: pointer targets in passing argument 2 of 'XUartPs_Send' differ in signedness [-Wpointer-sign]
+  XUartPs_Send(&Uart_Ps, str_height, len);
+                         ^~~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:5: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'char *'
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+     ^~~~~~~~~~~~
+../main.c:659:25: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart_Ps, &end, 5);
+                         ^~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint64_t *' {aka 'long long unsigned int *'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+../main.c:662:24: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart_Ps,&img, img_size);
+                        ^~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint8_t **' {aka 'unsigned char **'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+At top level:
+../main.c:231:16: warning: 'spi_buffer' defined but not used [-Wunused-variable]
+ static uint8_t spi_buffer[SPI_BUFFER_SIZE];
+                ^~~~~~~~~~
+../main.c:219:35: warning: 'gpio4' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                                   ^~~~~
+../main.c:219:28: warning: 'gpio3' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                            ^~~~~
+../main.c:219:21: warning: 'gpio1' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                     ^~~~~
+../main.c: In function 'HDPYX_SETUP_TPG':
+../main.c:608:8: warning: 'status' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     if (status != XST_SUCCESS) {
+        ^
+Finished building: ../main.c
+ 
+Building target: UARTImage.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/lib -o "UARTImage.elf"  ./atise_img.o ./atise_vdma.o ./hdpyx_spi.o ./main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: UARTImage.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size UARTImage.elf  |tee "UARTImage.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 126724	   4100	92425664	92556488	5844cc8	UARTImage.elf
+Finished building: UARTImage.elf.size
+ 
+01:33:59 **** Incremental Build of configuration Debug for project UARTImage ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: rien à faire pour « main-build ».
+01:39:12 **** Auto Build of configuration Debug for project UARTImage ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'UartSend':
+../main.c:644:25: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart_Ps, &signature, 2);
+                         ^~~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+../main.c:649:25: warning: pointer targets in passing argument 2 of 'XUartPs_Send' differ in signedness [-Wpointer-sign]
+  XUartPs_Send(&Uart_Ps, str_width, len);
+                         ^~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:5: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'char *'
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+     ^~~~~~~~~~~~
+../main.c:652:25: warning: pointer targets in passing argument 2 of 'XUartPs_Send' differ in signedness [-Wpointer-sign]
+  XUartPs_Send(&Uart_Ps, str_height, len);
+                         ^~~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:5: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'char *'
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+     ^~~~~~~~~~~~
+../main.c:659:25: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart_Ps, &end, 5);
+                         ^~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint64_t *' {aka 'long long unsigned int *'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+../main.c:663:29: error: 'HelloWorld' undeclared (first use in this function)
+  while (SentCount < (sizeof(HelloWorld))) {
+                             ^~~~~~~~~~
+../main.c:663:29: note: each undeclared identifier is reported only once for each function it appears in
+../main.c:634:11: warning: unused variable 'img_size' [-Wunused-variable]
+  uint32_t img_size = width * height * 2; // FMa Modification >> 16-bit (x2 bytes)
+           ^~~~~~~~
+At top level:
+subdir.mk:27: recipe for target 'main.o' failed
+../main.c:231:16: warning: 'spi_buffer' defined but not used [-Wunused-variable]
+ static uint8_t spi_buffer[SPI_BUFFER_SIZE];
+                ^~~~~~~~~~
+../main.c:219:35: warning: 'gpio4' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                                   ^~~~~
+../main.c:219:28: warning: 'gpio3' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                            ^~~~~
+../main.c:219:21: warning: 'gpio1' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                     ^~~~~
+make: *** [main.o] Error 1
+01:39:20 **** Auto Build of configuration Debug for project UARTImage ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'UartSend':
+../main.c:644:25: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart_Ps, &signature, 2);
+                         ^~~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+../main.c:649:25: warning: pointer targets in passing argument 2 of 'XUartPs_Send' differ in signedness [-Wpointer-sign]
+  XUartPs_Send(&Uart_Ps, str_width, len);
+                         ^~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:5: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'char *'
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+     ^~~~~~~~~~~~
+../main.c:652:25: warning: pointer targets in passing argument 2 of 'XUartPs_Send' differ in signedness [-Wpointer-sign]
+  XUartPs_Send(&Uart_Ps, str_height, len);
+                         ^~~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:5: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'char *'
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+     ^~~~~~~~~~~~
+../main.c:659:25: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart_Ps, &end, 5);
+                         ^~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint64_t *' {aka 'long long unsigned int *'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+../main.c:663:29: error: 'HelloWorld' undeclared (first use in this function)
+  while (SentCount < (sizeof(HelloWorld))) {
+                             ^~~~~~~~~~
+../main.c:663:29: note: each undeclared identifier is reported only once for each function it appears in
+subdir.mk:27: recipe for target 'main.o' failed
+../main.c:634:11: warning: unused variable 'img_size' [-Wunused-variable]
+  uint32_t img_size = width * height * 2; // FMa Modification >> 16-bit (x2 bytes)
+           ^~~~~~~~
+At top level:
+../main.c:231:16: warning: 'spi_buffer' defined but not used [-Wunused-variable]
+ static uint8_t spi_buffer[SPI_BUFFER_SIZE];
+                ^~~~~~~~~~
+../main.c:219:35: warning: 'gpio4' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                                   ^~~~~
+../main.c:219:28: warning: 'gpio3' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                            ^~~~~
+../main.c:219:21: warning: 'gpio1' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                     ^~~~~
+make: *** [main.o] Error 1
+01:39:33 **** Auto Build of configuration Debug for project UARTImage ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'UartSend':
+../main.c:644:25: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart_Ps, &signature, 2);
+                         ^~~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+../main.c:649:25: warning: pointer targets in passing argument 2 of 'XUartPs_Send' differ in signedness [-Wpointer-sign]
+  XUartPs_Send(&Uart_Ps, str_width, len);
+                         ^~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:5: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'char *'
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+     ^~~~~~~~~~~~
+../main.c:652:25: warning: pointer targets in passing argument 2 of 'XUartPs_Send' differ in signedness [-Wpointer-sign]
+  XUartPs_Send(&Uart_Ps, str_height, len);
+                         ^~~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:5: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'char *'
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+     ^~~~~~~~~~~~
+../main.c:659:25: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart_Ps, &end, 5);
+                         ^~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint64_t *' {aka 'long long unsigned int *'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+../main.c:663:29: error: 'HelloWorld' undeclared (first use in this function)
+  while (SentCount < (sizeof(HelloWorld))) {
+subdir.mk:27: recipe for target 'main.o' failed
+                             ^~~~~~~~~~
+../main.c:663:29: note: each undeclared identifier is reported only once for each function it appears in
+../main.c:665:25: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+   XUartPs_Send(&Uart_Ps,&img, 1);
+                         ^~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint8_t **' {aka 'unsigned char **'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+../main.c:634:11: warning: unused variable 'img_size' [-Wunused-variable]
+  uint32_t img_size = width * height * 2; // FMa Modification >> 16-bit (x2 bytes)
+           ^~~~~~~~
+At top level:
+../main.c:231:16: warning: 'spi_buffer' defined but not used [-Wunused-variable]
+ static uint8_t spi_buffer[SPI_BUFFER_SIZE];
+                ^~~~~~~~~~
+../main.c:219:35: warning: 'gpio4' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                                   ^~~~~
+../main.c:219:28: warning: 'gpio3' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                            ^~~~~
+../main.c:219:21: warning: 'gpio1' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                     ^~~~~
+make: *** [main.o] Error 1
+01:39:44 **** Auto Build of configuration Debug for project UARTImage ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'UartSend':
+../main.c:644:25: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart_Ps, &signature, 2);
+                         ^~~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+../main.c:649:25: warning: pointer targets in passing argument 2 of 'XUartPs_Send' differ in signedness [-Wpointer-sign]
+  XUartPs_Send(&Uart_Ps, str_width, len);
+                         ^~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:5: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'char *'
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+     ^~~~~~~~~~~~
+../main.c:652:25: warning: pointer targets in passing argument 2 of 'XUartPs_Send' differ in signedness [-Wpointer-sign]
+  XUartPs_Send(&Uart_Ps, str_height, len);
+                         ^~~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:5: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'char *'
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+     ^~~~~~~~~~~~
+../main.c:659:25: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart_Ps, &end, 5);
+                         ^~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint64_t *' {aka 'long long unsigned int *'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+../main.c:663:21: error: expected expression before ')' token
+  while (SentCount < ) {
+                     ^
+../main.c:665:25: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+subdir.mk:27: recipe for target 'main.o' failed
+   XUartPs_Send(&Uart_Ps,&img, 1);
+                         ^~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint8_t **' {aka 'unsigned char **'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+../main.c:634:11: warning: unused variable 'img_size' [-Wunused-variable]
+  uint32_t img_size = width * height * 2; // FMa Modification >> 16-bit (x2 bytes)
+           ^~~~~~~~
+At top level:
+../main.c:231:16: warning: 'spi_buffer' defined but not used [-Wunused-variable]
+ static uint8_t spi_buffer[SPI_BUFFER_SIZE];
+                ^~~~~~~~~~
+../main.c:219:35: warning: 'gpio4' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                                   ^~~~~
+../main.c:219:28: warning: 'gpio3' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                            ^~~~~
+../main.c:219:21: warning: 'gpio1' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                     ^~~~~
+make: *** [main.o] Error 1
+01:39:55 **** Auto Build of configuration Debug for project UARTImage ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'UartSend':
+../main.c:644:25: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart_Ps, &signature, 2);
+                         ^~~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+../main.c:649:25: warning: pointer targets in passing argument 2 of 'XUartPs_Send' differ in signedness [-Wpointer-sign]
+  XUartPs_Send(&Uart_Ps, str_width, len);
+                         ^~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:5: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'char *'
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+     ^~~~~~~~~~~~
+../main.c:652:25: warning: pointer targets in passing argument 2 of 'XUartPs_Send' differ in signedness [-Wpointer-sign]
+  XUartPs_Send(&Uart_Ps, str_height, len);
+                         ^~~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:5: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'char *'
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+     ^~~~~~~~~~~~
+../main.c:659:25: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart_Ps, &end, 5);
+                         ^~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint64_t *' {aka 'long long unsigned int *'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+../main.c:665:25: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+   XUartPs_Send(&Uart_Ps,&img, 1);
+                         ^~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint8_t **' {aka 'unsigned char **'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+At top level:
+../main.c:231:16: warning: 'spi_buffer' defined but not used [-Wunused-variable]
+ static uint8_t spi_buffer[SPI_BUFFER_SIZE];
+                ^~~~~~~~~~
+../main.c:219:35: warning: 'gpio4' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                                   ^~~~~
+../main.c:219:28: warning: 'gpio3' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                            ^~~~~
+../main.c:219:21: warning: 'gpio1' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                     ^~~~~
+../main.c: In function 'HDPYX_SETUP_TPG':
+../main.c:608:8: warning: 'status' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     if (status != XST_SUCCESS) {
+        ^
+Finished building: ../main.c
+ 
+Building target: UARTImage.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/lib -o "UARTImage.elf"  ./atise_img.o ./atise_vdma.o ./hdpyx_spi.o ./main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: UARTImage.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size UARTImage.elf  |tee "UARTImage.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 126792	   4100	92425664	92556556	5844d0c	UARTImage.elf
+Finished building: UARTImage.elf.size
+ 
+01:40:49 **** Incremental Build of configuration Debug for project UARTImage ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: rien à faire pour « main-build ».
+01:49:54 **** Auto Build of configuration Debug for project UARTImage ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'UartSend':
+../main.c:644:25: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart_Ps, &signature, 2);
+                         ^~~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+../main.c:649:25: warning: pointer targets in passing argument 2 of 'XUartPs_Send' differ in signedness [-Wpointer-sign]
+  XUartPs_Send(&Uart_Ps, str_width, len);
+                         ^~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:5: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'char *'
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+     ^~~~~~~~~~~~
+../main.c:652:25: warning: pointer targets in passing argument 2 of 'XUartPs_Send' differ in signedness [-Wpointer-sign]
+  XUartPs_Send(&Uart_Ps, str_height, len);
+                         ^~~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:5: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'char *'
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+     ^~~~~~~~~~~~
+../main.c:659:25: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart_Ps, &end, 5);
+                         ^~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint64_t *' {aka 'long long unsigned int *'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+At top level:
+../main.c:231:16: warning: 'spi_buffer' defined but not used [-Wunused-variable]
+ static uint8_t spi_buffer[SPI_BUFFER_SIZE];
+                ^~~~~~~~~~
+../main.c:219:35: warning: 'gpio4' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                                   ^~~~~
+../main.c:219:28: warning: 'gpio3' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                            ^~~~~
+../main.c:219:21: warning: 'gpio1' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                     ^~~~~
+../main.c: In function 'HDPYX_SETUP_TPG':
+../main.c:608:8: warning: 'status' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     if (status != XST_SUCCESS) {
+        ^
+Finished building: ../main.c
+ 
+Building target: UARTImage.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/lib -o "UARTImage.elf"  ./atise_img.o ./atise_vdma.o ./hdpyx_spi.o ./main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: UARTImage.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size UARTImage.elf  |tee "UARTImage.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 126792	   4100	92425664	92556556	5844d0c	UARTImage.elf
+Finished building: UARTImage.elf.size
+ 
+01:51:11 **** Incremental Build of configuration Debug for project UARTImage ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: rien à faire pour « main-build ».
+01:57:28 **** Incremental Build of configuration Debug for project UARTImage ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: rien à faire pour « main-build ».

@@ -650,20 +650,20 @@ int UartSend(u16 DeviceId, uint8_t* img, uint32_t width, uint32_t height)
 	XUartPs_Send(&Uart_Ps, &whitespace, 1);
 	len = snprintf(str_height, sizeof(str_height), "%lu", height);
 	XUartPs_Send(&Uart_Ps, str_height, len);
-	XUartPs_Send(&Uart_Ps, &newline, 1);
+	f_write(&file, &newline, 1, &bw);
 
 	// Max value, 255
 	//uint32_t end = 0x0A353532;
 	// Max value 16383 (14-bit)
 	uint64_t end = 0x0A3338333631; // FMa Modification >> 16-bit
-	XUartPs_Send(&Uart_Ps, &end, 5);
-	XUartPs_Send(&Uart_Ps, &newline, 1);
+	f_write(&file, &end, 5, &bw);
+	f_write(&file, &newline, 1, &bw);
 
-	//XUartPs_Send(&Uart_Ps,&img, img_size);
-	while (SentCount < img_size) {
-		SentCount += 1;
-		XUartPs_Send(&Uart_Ps,&img[SentCount], 1);
-	}
+	XUartPs_Send(&Uart_Ps,&img, img_size);
+	/*while (SentCount < (sizeof(HelloWorld))) {
+		SentCount += XUartPs_Send(&Uart_Ps,
+					   &HelloWorld[SentCount], 1);
+	}*/
 
 	return SentCount;
 }

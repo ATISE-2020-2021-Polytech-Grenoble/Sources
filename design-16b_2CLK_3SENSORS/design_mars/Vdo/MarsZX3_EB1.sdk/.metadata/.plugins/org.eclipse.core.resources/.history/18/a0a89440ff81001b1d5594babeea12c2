@@ -631,39 +631,12 @@ int UartSend(u16 DeviceId, uint8_t* img, uint32_t width, uint32_t height)
 
 	XUartPs_SetBaudRate(&Uart_Ps, 115200);
 
-	uint32_t img_size = width * height * 2; // FMa Modification >> 16-bit (x2 bytes)
-
-	uint16_t signature = 0x3550;
-	uint8_t newline = '\n';
-	uint8_t whitespace = ' ';
-	char str_width[6];
-	char str_height[6];
-	int len = 0;
-
-	// P5 Header
-	XUartPs_Send(&Uart_Ps, &signature, 2);
-	XUartPs_Send(&Uart_Ps, &newline, 1);
-
-	// Image dimensions
-	len = snprintf(str_width, sizeof(str_width), "%lu", width);
-	XUartPs_Send(&Uart_Ps, str_width, len);
-	XUartPs_Send(&Uart_Ps, &whitespace, 1);
-	len = snprintf(str_height, sizeof(str_height), "%lu", height);
-	XUartPs_Send(&Uart_Ps, str_height, len);
-	XUartPs_Send(&Uart_Ps, &newline, 1);
-
-	// Max value, 255
-	//uint32_t end = 0x0A353532;
-	// Max value 16383 (14-bit)
-	uint64_t end = 0x0A3338333631; // FMa Modification >> 16-bit
-	XUartPs_Send(&Uart_Ps, &end, 5);
-	XUartPs_Send(&Uart_Ps, &newline, 1);
-
-	//XUartPs_Send(&Uart_Ps,&img, img_size);
-	while (SentCount < img_size) {
-		SentCount += 1;
-		XUartPs_Send(&Uart_Ps,&img[SentCount], 1);
-	}
+	uint32_t img_size = width * height * 2;
+	XUartPs_Send(&Uart_Ps,&img, img_size);
+	/*while (SentCount < (sizeof(HelloWorld))) {
+		SentCount += XUartPs_Send(&Uart_Ps,
+					   &HelloWorld[SentCount], 1);
+	}*/
 
 	return SentCount;
 }
