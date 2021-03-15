@@ -634,3 +634,4 @@ con
 ----------------End of Script----------------
 
 01:57:36 INFO  : Launch script is exported to file '/home/killian/Bureau/Atise/Sources/design-16b_2CLK_3SENSORS/design_mars/Vdo/MarsZX3_EB1.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_uartimage.elf_on_local.tcl'
+02:02:44 INFO  : Disconnected from the channel tcfchan#13.

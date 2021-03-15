@@ -277,3 +277,12 @@ Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-20
 
 !ENTRY com.xilinx.sdk.utils 0 0 2021-03-11 01:57:36.746
 !MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-20
+
+!ENTRY com.xilinx.sdk.utils 1 0 2021-03-11 02:02:44.245
+!MESSAGE Executed Webtalk command
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-11 02:02:44.249
+!MESSAGE XSCT Command: [disconnect tcfchan#13], Thread: Thread-1601
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-11 02:02:44.253
+!MESSAGE XSCT command with result: [disconnect tcfchan#13], Result: [null, ]. Thread: Thread-1601
