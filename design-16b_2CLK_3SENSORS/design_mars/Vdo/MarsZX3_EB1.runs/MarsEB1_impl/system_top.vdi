@@ -2,8 +2,8 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Thu Mar 11 00:25:07 2021
-# Process ID: 13982
+# Start of session at: Mon Mar 15 17:10:35 2021
+# Process ID: 13113
 # Current directory: /home/killian/Bureau/Atise/Sources/design-16b_2CLK_3SENSORS/design_mars/Vdo/MarsZX3_EB1.runs/MarsEB1_impl
 # Command line: vivado -log system_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source system_top.tcl -notrace
 # Log file: /home/killian/Bureau/Atise/Sources/design-16b_2CLK_3SENSORS/design_mars/Vdo/MarsZX3_EB1.runs/MarsEB1_impl/system_top.vdi
@@ -15,7 +15,7 @@ Command: open_checkpoint system_top_routed.dcp
 
 Starting open_checkpoint Task
 
-Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.09 . Memory (MB): peak = 1433.629 ; gain = 0.000 ; free physical = 650 ; free virtual = 4601
+Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.12 . Memory (MB): peak = 1437.695 ; gain = 0.000 ; free physical = 146 ; free virtual = 3982
 INFO: [Device 21-403] Loading part xc7z020clg484-1
 INFO: [Netlist 29-17] Analyzing 240 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -28,10 +28,10 @@ INFO: [Project 1-853] Binary constraint restore complete.
 Reading XDEF placement.
 Reading placer database...
 Reading XDEF routing.
-Read XDEF File: Time (s): cpu = 00:00:00.90 ; elapsed = 00:00:00.96 . Memory (MB): peak = 2242.266 ; gain = 0.000 ; free physical = 170 ; free virtual = 3765
-Restored from archive | CPU: 0.940000 secs | Memory: 14.865265 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:00.90 ; elapsed = 00:00:00.96 . Memory (MB): peak = 2242.266 ; gain = 0.000 ; free physical = 170 ; free virtual = 3765
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2242.266 ; gain = 0.000 ; free physical = 170 ; free virtual = 3765
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2242.324 ; gain = 0.000 ; free physical = 137 ; free virtual = 2995
+Restored from archive | CPU: 1.420000 secs | Memory: 14.865265 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2242.324 ; gain = 0.000 ; free physical = 137 ; free virtual = 2995
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2242.324 ; gain = 0.000 ; free physical = 130 ; free virtual = 2996
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 18 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 2 instances
@@ -40,7 +40,7 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   SRLC32E => SRL16E: 7 instances
 
 INFO: [Project 1-604] Checkpoint was created with Vivado v2019.1 (64-bit) build 2552052
-open_checkpoint: Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2242.266 ; gain = 808.637 ; free physical = 169 ; free virtual = 3765
+open_checkpoint: Time (s): cpu = 00:00:20 ; elapsed = 00:00:41 . Memory (MB): peak = 2242.324 ; gain = 804.629 ; free physical = 126 ; free virtual = 2995
 INFO: [Memdata 28-167] Found XPM memory block i_system/axi_vdma_2/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to auto. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the i_system/axi_vdma_2/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
 INFO: [Memdata 28-208] The XPM instance: <i_system/axi_vdma_2/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <i_system/axi_vdma_2>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
 INFO: [Memdata 28-167] Found XPM memory block i_system/axi_vdma_1/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to auto. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the i_system/axi_vdma_1/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
@@ -73,9 +73,9 @@ Creating bitstream...
 Writing bitstream ./system_top.bit...
 INFO: [Vivado 12-1842] Bitgen Completed Successfully.
 INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
-INFO: [Common 17-186] '/home/killian/Bureau/Atise/Sources/design-16b_2CLK_3SENSORS/design_mars/Vdo/MarsZX3_EB1.runs/MarsEB1_impl/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Thu Mar 11 00:25:57 2021. For additional details about this file, please refer to the WebTalk help file at /home/killian/Xilinx/Vivado/2019.1/doc/webtalk_introduction.html.
+INFO: [Common 17-186] '/home/killian/Bureau/Atise/Sources/design-16b_2CLK_3SENSORS/design_mars/Vdo/MarsZX3_EB1.runs/MarsEB1_impl/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Mon Mar 15 17:12:36 2021. For additional details about this file, please refer to the WebTalk help file at /home/killian/Xilinx/Vivado/2019.1/doc/webtalk_introduction.html.
 INFO: [Common 17-83] Releasing license: Implementation
 35 Infos, 0 Warnings, 1 Critical Warnings and 0 Errors encountered.
 write_bitstream completed successfully
-write_bitstream: Time (s): cpu = 00:00:30 ; elapsed = 00:00:23 . Memory (MB): peak = 2697.305 ; gain = 455.039 ; free physical = 478 ; free virtual = 3658
-INFO: [Common 17-206] Exiting Vivado at Thu Mar 11 00:25:57 2021...
+write_bitstream: Time (s): cpu = 00:00:36 ; elapsed = 00:01:01 . Memory (MB): peak = 2697.488 ; gain = 455.164 ; free physical = 343 ; free virtual = 2562
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 15 17:12:38 2021...

@@ -616,6 +616,7 @@ static int HDPYX_SETUP_TPG(void)
 int UartSend(u16 DeviceId, uint8_t* img, uint32_t width, uint32_t height)
 {
 	int SentCount = 0;
+	int resr = 0;
 	int Status;
 	XUartPs_Config *Config;
 
@@ -662,7 +663,11 @@ int UartSend(u16 DeviceId, uint8_t* img, uint32_t width, uint32_t height)
 	//XUartPs_Send(&Uart_Ps,&img, img_size);
 	while (SentCount < img_size) {
 		SentCount += 1;
-		XUartPs_Send(&Uart_Ps,&img[SentCount], 1);
+		resr = XUartPs_Send(&Uart_Ps,&img[SentCount], 1);
+		if(resr != XST_SUCCESS){
+			xil_printf("transfert arreter");
+			xil_printf("%d", SentCount);
+		}
 	}
 
 	return SentCount;

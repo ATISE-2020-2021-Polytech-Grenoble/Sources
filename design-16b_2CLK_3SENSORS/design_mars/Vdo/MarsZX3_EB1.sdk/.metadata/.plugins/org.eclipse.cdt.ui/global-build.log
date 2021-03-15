@@ -2909,3 +2909,764 @@ make pre-build main-build
 a9-linaro-pre-build-step
  
 make: rien à faire pour « main-build ».
+17:20:51 **** Incremental Build of configuration Debug for project UARTImage ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../atise_img.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"atise_img.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include -MMD -MP -MF"atise_img.d" -MT"atise_img.o" -o "atise_img.o" "../atise_img.c"
+../atise_img.c:2:10: fatal error: xsdps.h: No such file or directory
+ #include <xsdps.h>
+          ^~~~~~~~~
+compilation terminated.
+subdir.mk:27: recipe for target 'atise_img.o' failed
+make: *** [atise_img.o] Error 1
+17:21:23 **** Clean-only build of configuration Debug for project UARTImage ****
+make clean 
+rm -rf  ./atise_img.o ./atise_vdma.o ./hdpyx_spi.o ./main.o  ./atise_img.d ./atise_vdma.d ./hdpyx_spi.d ./main.d  UARTImage.elf.size  UARTImage.elf
+ 
+17:21:24 **** Clean-only build of configuration Debug for project freertos10_xilinx_bsp_base_xuartps_hello_world_example_1 ****
+make clean 
+rm -rf  ./src/xuartps_hello_world_example.o  ./src/xuartps_hello_world_example.d  freertos10_xilinx_bsp_base_xuartps_hello_world_example_1.elf.size  freertos10_xilinx_bsp_base_xuartps_hello_world_example_1.elf
+ 
+17:21:25 **** Clean-only build of project freertos10_xilinx_bsp_base ****
+make -k clean 
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s clean 
+make -C ps7_cortexa9_0/libsrc/spips_v3_2/src -s clean 
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s clean 
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s clean 
+make -C ps7_cortexa9_0/libsrc/scugic_v4_0/src -s clean 
+make -C ps7_cortexa9_0/libsrc/emacps_v3_9/src -s clean 
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_9/src -s clean 
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_5/src -s clean 
+make -C ps7_cortexa9_0/libsrc/iicps_v3_9/src -s clean 
+make -C ps7_cortexa9_0/libsrc/qspips_v3_6/src -s clean 
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s clean 
+make -C ps7_cortexa9_0/libsrc/xilffs_v4_1/src -s clean 
+make -C ps7_cortexa9_0/libsrc/sdps_v3_7/src -s clean 
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s clean 
+make -C ps7_cortexa9_0/libsrc/axivdma_v6_6/src -s clean 
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s clean 
+make -C ps7_cortexa9_0/libsrc/gpio_v4_4/src -s clean 
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s clean 
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s clean 
+make -C ps7_cortexa9_0/libsrc/freertos10_xilinx_v1_3/src -s clean 
+make -C ps7_cortexa9_0/libsrc/wdtps_v3_1/src -s clean 
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s clean 
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src -s clean 
+rm -f ps7_cortexa9_0/lib/libxil.a
+17:21:27 **** Build of project freertos10_xilinx_bsp_base ****
+make -k all 
+Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/spips_v3_2/src
+make -C ps7_cortexa9_0/libsrc/spips_v3_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_4/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/scugic_v4_0/src
+make -C ps7_cortexa9_0/libsrc/scugic_v4_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_9/src
+make -C ps7_cortexa9_0/libsrc/emacps_v3_9/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_9/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_9/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_5/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/iicps_v3_9/src
+make -C ps7_cortexa9_0/libsrc/iicps_v3_9/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_6/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_6/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_3/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/xilffs_v4_1/src
+make -C ps7_cortexa9_0/libsrc/xilffs_v4_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_7/src
+make -C ps7_cortexa9_0/libsrc/sdps_v3_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/axivdma_v6_6/src
+make -C ps7_cortexa9_0/libsrc/axivdma_v6_6/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_4/src
+make -C ps7_cortexa9_0/libsrc/gpio_v4_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_7/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/freertos10_xilinx_v1_3/src
+make -C ps7_cortexa9_0/libsrc/freertos10_xilinx_v1_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+include
+Running Make include in ps7_cortexa9_0/libsrc/wdtps_v3_1/src
+make -C ps7_cortexa9_0/libsrc/wdtps_v3_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling ddrps
+arm-none-eabi-ar: création de ../../../lib/libxil.a
+Running Make libs in ps7_cortexa9_0/libsrc/spips_v3_2/src
+make -C ps7_cortexa9_0/libsrc/spips_v3_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling spips
+Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_4/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling dmaps
+Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling cpu_cortexa9
+Running Make libs in ps7_cortexa9_0/libsrc/scugic_v4_0/src
+make -C ps7_cortexa9_0/libsrc/scugic_v4_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling scugic
+Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_9/src
+make -C ps7_cortexa9_0/libsrc/emacps_v3_9/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling emacps
+Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_9/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_9/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling ttcps
+Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_5/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling gpiops
+Running Make libs in ps7_cortexa9_0/libsrc/iicps_v3_9/src
+make -C ps7_cortexa9_0/libsrc/iicps_v3_9/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling iicps
+Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_6/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_6/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling qspips
+Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_3/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling xadcps
+Running Make libs in ps7_cortexa9_0/libsrc/xilffs_v4_1/src
+make -C ps7_cortexa9_0/libsrc/xilffs_v4_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling XilFFs Library
+Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_7/src
+make -C ps7_cortexa9_0/libsrc/sdps_v3_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling sdps
+Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling devcfg
+Running Make libs in ps7_cortexa9_0/libsrc/axivdma_v6_6/src
+make -C ps7_cortexa9_0/libsrc/axivdma_v6_6/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling axivdma
+Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling scuwdt
+Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_4/src
+make -C ps7_cortexa9_0/libsrc/gpio_v4_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling gpio
+Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_7/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling uartps
+Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling usbps
+Running Make libs in ps7_cortexa9_0/libsrc/freertos10_xilinx_v1_3/src
+make -C ps7_cortexa9_0/libsrc/freertos10_xilinx_v1_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling standalone
+Compiling FreeRTOS
+arm-none-eabi-ar: création de ../../../lib/libfreertos.a
+Running Make libs in ps7_cortexa9_0/libsrc/wdtps_v3_1/src
+make -C ps7_cortexa9_0/libsrc/wdtps_v3_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling wdtps
+Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling scutimer
+Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling coresightps_dcc
+Finished building libraries
+17:21:52 **** Build of configuration Debug for project UARTImage ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../atise_img.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"atise_img.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include -MMD -MP -MF"atise_img.d" -MT"atise_img.o" -o "atise_img.o" "../atise_img.c"
+Finished building: ../atise_img.c
+ 
+Building file: ../atise_vdma.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"atise_vdma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include -MMD -MP -MF"atise_vdma.d" -MT"atise_vdma.o" -o "atise_vdma.o" "../atise_vdma.c"
+Finished building: ../atise_vdma.c
+ 
+Building file: ../hdpyx_spi.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"hdpyx_spi.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include -MMD -MP -MF"hdpyx_spi.d" -MT"hdpyx_spi.o" -o "hdpyx_spi.o" "../hdpyx_spi.c"
+Finished building: ../hdpyx_spi.c
+ 
+Building file: ../main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'UartSend':
+../main.c:644:25: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart_Ps, &signature, 2);
+                         ^~~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+../main.c:649:25: warning: pointer targets in passing argument 2 of 'XUartPs_Send' differ in signedness [-Wpointer-sign]
+  XUartPs_Send(&Uart_Ps, str_width, len);
+                         ^~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:5: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'char *'
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+     ^~~~~~~~~~~~
+../main.c:652:25: warning: pointer targets in passing argument 2 of 'XUartPs_Send' differ in signedness [-Wpointer-sign]
+  XUartPs_Send(&Uart_Ps, str_height, len);
+                         ^~~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:5: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'char *'
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+     ^~~~~~~~~~~~
+../main.c:659:25: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart_Ps, &end, 5);
+                         ^~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint64_t *' {aka 'long long unsigned int *'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+At top level:
+../main.c:231:16: warning: 'spi_buffer' defined but not used [-Wunused-variable]
+ static uint8_t spi_buffer[SPI_BUFFER_SIZE];
+                ^~~~~~~~~~
+../main.c:219:35: warning: 'gpio4' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                                   ^~~~~
+../main.c:219:28: warning: 'gpio3' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                            ^~~~~
+../main.c:219:21: warning: 'gpio1' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                     ^~~~~
+../main.c: In function 'HDPYX_SETUP_TPG':
+../main.c:608:8: warning: 'status' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     if (status != XST_SUCCESS) {
+        ^
+Finished building: ../main.c
+ 
+Building target: UARTImage.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/lib -o "UARTImage.elf"  ./atise_img.o ./atise_vdma.o ./hdpyx_spi.o ./main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: UARTImage.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size UARTImage.elf  |tee "UARTImage.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 126792	   4100	92425664	92556556	5844d0c	UARTImage.elf
+Finished building: UARTImage.elf.size
+ 
+17:21:54 **** Clean-only build of configuration Debug for project freertos10_xilinx_bsp_base_xuartps_hello_world_example_1 ****
+make clean 
+rm -rf  ./src/xuartps_hello_world_example.o  ./src/xuartps_hello_world_example.d  freertos10_xilinx_bsp_base_xuartps_hello_world_example_1.elf.size  freertos10_xilinx_bsp_base_xuartps_hello_world_example_1.elf
+ 
+17:21:54 **** Build of configuration Debug for project freertos10_xilinx_bsp_base_xuartps_hello_world_example_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xuartps_hello_world_example.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xuartps_hello_world_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include -MMD -MP -MF"src/xuartps_hello_world_example.d" -MT"src/xuartps_hello_world_example.o" -o "src/xuartps_hello_world_example.o" "../src/xuartps_hello_world_example.c"
+Finished building: ../src/xuartps_hello_world_example.c
+ 
+Building target: freertos10_xilinx_bsp_base_xuartps_hello_world_example_1.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/lib -o "freertos10_xilinx_bsp_base_xuartps_hello_world_example_1.elf"  ./src/xuartps_hello_world_example.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: freertos10_xilinx_bsp_base_xuartps_hello_world_example_1.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size freertos10_xilinx_bsp_base_xuartps_hello_world_example_1.elf  |tee "freertos10_xilinx_bsp_base_xuartps_hello_world_example_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78720	   3384	  89472	 171576	  29e38	freertos10_xilinx_bsp_base_xuartps_hello_world_example_1.elf
+Finished building: freertos10_xilinx_bsp_base_xuartps_hello_world_example_1.elf.size
+ 
+17:22:01 **** Incremental Build of configuration Debug for project UARTImage ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: rien à faire pour « main-build ».
+17:22:53 **** Incremental Build of configuration Debug for project UARTImage ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: rien à faire pour « main-build ».
+17:25:53 **** Auto Build of configuration Debug for project UARTImage ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'UartSend':
+../main.c:645:25: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart_Ps, &signature, 2);
+                         ^~~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+../main.c:650:25: warning: pointer targets in passing argument 2 of 'XUartPs_Send' differ in signedness [-Wpointer-sign]
+  XUartPs_Send(&Uart_Ps, str_width, len);
+                         ^~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:5: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'char *'
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+     ^~~~~~~~~~~~
+../main.c:653:25: warning: pointer targets in passing argument 2 of 'XUartPs_Send' differ in signedness [-Wpointer-sign]
+  XUartPs_Send(&Uart_Ps, str_height, len);
+                         ^~~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:5: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'char *'
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+     ^~~~~~~~~~~~
+../main.c:660:25: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart_Ps, &end, 5);
+                         ^~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint64_t *' {aka 'long long unsigned int *'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+../main.c:619:6: warning: unused variable 'nbChar' [-Wunused-variable]
+  int nbChar = 0;
+      ^~~~~~
+At top level:
+../main.c:231:16: warning: 'spi_buffer' defined but not used [-Wunused-variable]
+ static uint8_t spi_buffer[SPI_BUFFER_SIZE];
+                ^~~~~~~~~~
+../main.c:219:35: warning: 'gpio4' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                                   ^~~~~
+../main.c:219:28: warning: 'gpio3' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                            ^~~~~
+../main.c:219:21: warning: 'gpio1' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                     ^~~~~
+../main.c: In function 'HDPYX_SETUP_TPG':
+../main.c:608:8: warning: 'status' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     if (status != XST_SUCCESS) {
+        ^
+Finished building: ../main.c
+ 
+Building target: UARTImage.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/lib -o "UARTImage.elf"  ./atise_img.o ./atise_vdma.o ./hdpyx_spi.o ./main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: UARTImage.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size UARTImage.elf  |tee "UARTImage.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 126792	   4100	92425664	92556556	5844d0c	UARTImage.elf
+Finished building: UARTImage.elf.size
+ 
+17:26:18 **** Auto Build of configuration Debug for project UARTImage ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'UartSend':
+../main.c:645:25: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart_Ps, &signature, 2);
+                         ^~~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+../main.c:650:25: warning: pointer targets in passing argument 2 of 'XUartPs_Send' differ in signedness [-Wpointer-sign]
+  XUartPs_Send(&Uart_Ps, str_width, len);
+                         ^~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:5: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'char *'
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+     ^~~~~~~~~~~~
+../main.c:653:25: warning: pointer targets in passing argument 2 of 'XUartPs_Send' differ in signedness [-Wpointer-sign]
+  XUartPs_Send(&Uart_Ps, str_height, len);
+                         ^~~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:5: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'char *'
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+     ^~~~~~~~~~~~
+../main.c:660:25: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart_Ps, &end, 5);
+                         ^~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint64_t *' {aka 'long long unsigned int *'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+../main.c:619:6: warning: unused variable 'resr' [-Wunused-variable]
+  int resr = 0;
+      ^~~~
+At top level:
+../main.c:231:16: warning: 'spi_buffer' defined but not used [-Wunused-variable]
+ static uint8_t spi_buffer[SPI_BUFFER_SIZE];
+                ^~~~~~~~~~
+../main.c:219:35: warning: 'gpio4' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                                   ^~~~~
+../main.c:219:28: warning: 'gpio3' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                            ^~~~~
+../main.c:219:21: warning: 'gpio1' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                     ^~~~~
+../main.c: In function 'HDPYX_SETUP_TPG':
+../main.c:608:8: warning: 'status' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     if (status != XST_SUCCESS) {
+        ^
+Finished building: ../main.c
+ 
+Building target: UARTImage.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/lib -o "UARTImage.elf"  ./atise_img.o ./atise_vdma.o ./hdpyx_spi.o ./main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: UARTImage.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size UARTImage.elf  |tee "UARTImage.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 126792	   4100	92425664	92556556	5844d0c	UARTImage.elf
+Finished building: UARTImage.elf.size
+ 
+17:26:25 **** Auto Build of configuration Debug for project UARTImage ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'UartSend':
+../main.c:645:25: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart_Ps, &signature, 2);
+                         ^~~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+../main.c:650:25: warning: pointer targets in passing argument 2 of 'XUartPs_Send' differ in signedness [-Wpointer-sign]
+  XUartPs_Send(&Uart_Ps, str_width, len);
+                         ^~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:5: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'char *'
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+     ^~~~~~~~~~~~
+../main.c:653:25: warning: pointer targets in passing argument 2 of 'XUartPs_Send' differ in signedness [-Wpointer-sign]
+  XUartPs_Send(&Uart_Ps, str_height, len);
+                         ^~~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:5: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'char *'
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+     ^~~~~~~~~~~~
+../main.c:660:25: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart_Ps, &end, 5);
+                         ^~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint64_t *' {aka 'long long unsigned int *'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+../main.c:619:6: warning: variable 'resr' set but not used [-Wunused-but-set-variable]
+  int resr = 0;
+      ^~~~
+At top level:
+../main.c:231:16: warning: 'spi_buffer' defined but not used [-Wunused-variable]
+ static uint8_t spi_buffer[SPI_BUFFER_SIZE];
+                ^~~~~~~~~~
+../main.c:219:35: warning: 'gpio4' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                                   ^~~~~
+../main.c:219:28: warning: 'gpio3' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                            ^~~~~
+../main.c:219:21: warning: 'gpio1' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                     ^~~~~
+../main.c: In function 'HDPYX_SETUP_TPG':
+../main.c:608:8: warning: 'status' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     if (status != XST_SUCCESS) {
+        ^
+Finished building: ../main.c
+ 
+Building target: UARTImage.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/lib -o "UARTImage.elf"  ./atise_img.o ./atise_vdma.o ./hdpyx_spi.o ./main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: UARTImage.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size UARTImage.elf  |tee "UARTImage.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 126792	   4100	92425664	92556556	5844d0c	UARTImage.elf
+Finished building: UARTImage.elf.size
+ 
+17:28:16 **** Auto Build of configuration Debug for project UARTImage ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'UartSend':
+../main.c:645:25: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart_Ps, &signature, 2);
+                         ^~~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+../main.c:650:25: warning: pointer targets in passing argument 2 of 'XUartPs_Send' differ in signedness [-Wpointer-sign]
+  XUartPs_Send(&Uart_Ps, str_width, len);
+                         ^~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:5: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'char *'
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+     ^~~~~~~~~~~~
+../main.c:653:25: warning: pointer targets in passing argument 2 of 'XUartPs_Send' differ in signedness [-Wpointer-sign]
+  XUartPs_Send(&Uart_Ps, str_height, len);
+                         ^~~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:5: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'char *'
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+     ^~~~~~~~~~~~
+../main.c:660:25: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart_Ps, &end, 5);
+                         ^~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint64_t *' {aka 'long long unsigned int *'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+../main.c:669:4: warning: implicit declaration of function 'xil__printf'; did you mean 'xil_printf'? [-Wimplicit-function-declaration]
+    xil__printf("%d", SentCount);
+    ^~~~~~~~~~~
+    xil_printf
+At top level:
+../main.c:231:16: warning: 'spi_buffer' defined but not used [-Wunused-variable]
+ static uint8_t spi_buffer[SPI_BUFFER_SIZE];
+                ^~~~~~~~~~
+../main.c:219:35: warning: 'gpio4' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                                   ^~~~~
+../main.c:219:28: warning: 'gpio3' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                            ^~~~~
+../main.c:219:21: warning: 'gpio1' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                     ^~~~~
+../main.c: In function 'HDPYX_SETUP_TPG':
+../main.c:608:8: warning: 'status' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     if (status != XST_SUCCESS) {
+        ^
+Finished building: ../main.c
+ 
+Building target: UARTImage.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/lib -o "UARTImage.elf"  ./atise_img.o ./atise_vdma.o ./hdpyx_spi.o ./main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+/home/killian/Xilinx/SDK/2019.1/gnu/aarch32/lin/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld: ./main.o: in function `UartSend':
+/home/killian/Bureau/Atise/Sources/design-16b_2CLK_3SENSORS/design_mars/Vdo/MarsZX3_EB1.sdk/UARTImage/Debug/../main.c:669: undefined reference to `xil__printf'
+collect2: error: ld returned 1 exit status
+make: *** [UARTImage.elf] Error 1
+makefile:38: recipe for target 'UARTImage.elf' failed
+17:28:24 **** Auto Build of configuration Debug for project UARTImage ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'UartSend':
+../main.c:645:25: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart_Ps, &signature, 2);
+                         ^~~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+../main.c:650:25: warning: pointer targets in passing argument 2 of 'XUartPs_Send' differ in signedness [-Wpointer-sign]
+  XUartPs_Send(&Uart_Ps, str_width, len);
+                         ^~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:5: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'char *'
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+     ^~~~~~~~~~~~
+../main.c:653:25: warning: pointer targets in passing argument 2 of 'XUartPs_Send' differ in signedness [-Wpointer-sign]
+  XUartPs_Send(&Uart_Ps, str_height, len);
+                         ^~~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:5: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'char *'
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+     ^~~~~~~~~~~~
+../main.c:660:25: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart_Ps, &end, 5);
+                         ^~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint64_t *' {aka 'long long unsigned int *'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+At top level:
+../main.c:231:16: warning: 'spi_buffer' defined but not used [-Wunused-variable]
+ static uint8_t spi_buffer[SPI_BUFFER_SIZE];
+                ^~~~~~~~~~
+../main.c:219:35: warning: 'gpio4' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                                   ^~~~~
+../main.c:219:28: warning: 'gpio3' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                            ^~~~~
+../main.c:219:21: warning: 'gpio1' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                     ^~~~~
+../main.c: In function 'HDPYX_SETUP_TPG':
+../main.c:608:8: warning: 'status' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     if (status != XST_SUCCESS) {
+        ^
+Finished building: ../main.c
+ 
+Building target: UARTImage.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/lib -o "UARTImage.elf"  ./atise_img.o ./atise_vdma.o ./hdpyx_spi.o ./main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: UARTImage.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size UARTImage.elf  |tee "UARTImage.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 126876	   4100	92425664	92556640	5844d60	UARTImage.elf
+Finished building: UARTImage.elf.size
+ 
+17:29:02 **** Auto Build of configuration Debug for project UARTImage ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'UartSend':
+../main.c:645:25: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart_Ps, &signature, 2);
+                         ^~~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+../main.c:650:25: warning: pointer targets in passing argument 2 of 'XUartPs_Send' differ in signedness [-Wpointer-sign]
+  XUartPs_Send(&Uart_Ps, str_width, len);
+                         ^~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:5: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'char *'
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+     ^~~~~~~~~~~~
+../main.c:653:25: warning: pointer targets in passing argument 2 of 'XUartPs_Send' differ in signedness [-Wpointer-sign]
+  XUartPs_Send(&Uart_Ps, str_height, len);
+                         ^~~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:5: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'char *'
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+     ^~~~~~~~~~~~
+../main.c:660:25: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart_Ps, &end, 5);
+                         ^~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint64_t *' {aka 'long long unsigned int *'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+At top level:
+Finished building: ../main.c
+../main.c:231:16: warning: 'spi_buffer' defined but not used [-Wunused-variable]
+ static uint8_t spi_buffer[SPI_BUFFER_SIZE];
+                ^~~~~~~~~~
+../main.c:219:35: warning: 'gpio4' defined but not used [-Wunused-variable]
+ 
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                                   ^~~~~
+../main.c:219:28: warning: 'gpio3' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                            ^~~~~
+../main.c:219:21: warning: 'gpio1' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                     ^~~~~
+../main.c: In function 'HDPYX_SETUP_TPG':
+../main.c:608:8: warning: 'status' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     if (status != XST_SUCCESS) {
+        ^
+Building target: UARTImage.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/lib -o "UARTImage.elf"  ./atise_img.o ./atise_vdma.o ./hdpyx_spi.o ./main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: UARTImage.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size UARTImage.elf  |tee "UARTImage.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 126876	   4100	92425664	92556640	5844d60	UARTImage.elf
+Finished building: UARTImage.elf.size
+ 
+17:29:47 **** Auto Build of configuration Debug for project UARTImage ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'UartSend':
+../main.c:645:25: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart_Ps, &signature, 2);
+                         ^~~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+../main.c:650:25: warning: pointer targets in passing argument 2 of 'XUartPs_Send' differ in signedness [-Wpointer-sign]
+  XUartPs_Send(&Uart_Ps, str_width, len);
+                         ^~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:5: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'char *'
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+     ^~~~~~~~~~~~
+../main.c:653:25: warning: pointer targets in passing argument 2 of 'XUartPs_Send' differ in signedness [-Wpointer-sign]
+  XUartPs_Send(&Uart_Ps, str_height, len);
+                         ^~~~~~~~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:5: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'char *'
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+     ^~~~~~~~~~~~
+../main.c:660:25: warning: passing argument 2 of 'XUartPs_Send' from incompatible pointer type [-Wincompatible-pointer-types]
+  XUartPs_Send(&Uart_Ps, &end, 5);
+                         ^~~~
+In file included from ../main.c:52:
+../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/include/xuartps.h:462:43: note: expected 'u8 *' {aka 'unsigned char *'} but argument is of type 'uint64_t *' {aka 'long long unsigned int *'}
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+                                       ~~~~^~~~~~~~~
+At top level:
+../main.c:231:16: warning: 'spi_buffer' defined but not used [-Wunused-variable]
+ static uint8_t spi_buffer[SPI_BUFFER_SIZE];
+                ^~~~~~~~~~
+../main.c:219:35: warning: 'gpio4' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                                   ^~~~~
+../main.c:219:28: warning: 'gpio3' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                            ^~~~~
+../main.c:219:21: warning: 'gpio1' defined but not used [-Wunused-variable]
+ static XGpio gpio0, gpio1, gpio3, gpio4;
+                     ^~~~~
+../main.c: In function 'HDPYX_SETUP_TPG':
+../main.c:608:8: warning: 'status' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     if (status != XST_SUCCESS) {
+        ^
+Finished building: ../main.c
+ 
+Building target: UARTImage.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../freertos10_xilinx_bsp_base/ps7_cortexa9_0/lib -o "UARTImage.elf"  ./atise_img.o ./atise_vdma.o ./hdpyx_spi.o ./main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: UARTImage.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size UARTImage.elf  |tee "UARTImage.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 126876	   4100	92425664	92556640	5844d60	UARTImage.elf
+Finished building: UARTImage.elf.size
+ 
+17:30:38 **** Incremental Build of configuration Debug for project UARTImage ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: rien à faire pour « main-build ».
