@@ -1,4 +1,4 @@
-17:21:54 **** Build of configuration Debug for project freertos10_xilinx_bsp_base_xuartps_hello_world_example_1 ****
+02:24:04 **** Build of configuration Debug for project freertos10_xilinx_bsp_base_xuartps_hello_world_example_1 ****
 make pre-build main-build 
 a9-linaro-pre-build-step
  
@@ -19,5 +19,5 @@ arm-none-eabi-size freertos10_xilinx_bsp_base_xuartps_hello_world_example_1.elf 
 Finished building: freertos10_xilinx_bsp_base_xuartps_hello_world_example_1.elf.size
  
 
-17:21:56 Build Finished (took 1s.118ms)
+02:24:05 Build Finished (took 815ms)
 

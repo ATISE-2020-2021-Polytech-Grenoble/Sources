@@ -662,12 +662,14 @@ int UartSend(u16 DeviceId, uint8_t* img, uint32_t width, uint32_t height)
 
 	//XUartPs_Send(&Uart_Ps,&img, img_size);
 	while (SentCount < img_size) {
-		SentCount += 1;
 		resr = XUartPs_Send(&Uart_Ps,&img[SentCount], 1);
-		if(resr != XST_SUCCESS){
-			xil_printf("transfert arreter");
+		while(resr != XST_SUCCESS){
+			xil_printf("");
+			resr = XUartPs_Send(&Uart_Ps,&img[SentCount], 1);
+			xil_printf("\n transfert arreter");
 			xil_printf("%d", SentCount);
 		}
+		SentCount += 1;
 	}
 
 	return SentCount;
